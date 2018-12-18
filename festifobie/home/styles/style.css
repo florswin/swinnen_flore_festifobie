@@ -320,24 +320,24 @@ body {
 
 .wit .oorzaken .oorzaak1 {
   position: absolute;
-  top: -90%;
+  top: -50%;
   left: 5%;
 }
 
 .wit .oorzaken .oorzaak1 #zoen {
-  height: 100px;
+  height: 90px;
   width: auto;
 }
 
 @media (min-width: 768px) {
   .wit .oorzaken .oorzaak1 #zoen {
-    height: 170px;
+    height: 120px;
   }
 }
 
 @media (min-width: 992px) {
   .wit .oorzaken .oorzaak1 #zoen {
-    height: 200px;
+    height: 160px;
   }
 }
 
@@ -353,7 +353,7 @@ body {
   background-color: #15A2B1;
   padding: 20px;
   border-radius: 60px;
-  margin-top: 60px;
+  margin-top: 10px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
@@ -372,19 +372,19 @@ body {
 }
 
 .wit .oorzaken .oorzaak2 #zak {
-  height: 120px;
+  height: 90px;
   width: auto;
 }
 
 @media (min-width: 768px) {
   .wit .oorzaken .oorzaak2 #zak {
-    height: 170px;
+    height: 120px;
   }
 }
 
 @media (min-width: 992px) {
   .wit .oorzaken .oorzaak2 #zak {
-    height: 200px;
+    height: 160px;
   }
 }
 
@@ -399,7 +399,7 @@ body {
   background-color: #15A2B1;
   padding: 20px;
   border-radius: 60px;
-  margin: -160px 0px 0px 180px;
+  margin: -180px 0px 0px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
@@ -418,13 +418,13 @@ body {
 
 @media (min-width: 768px) {
   .wit .oorzaken .oorzaak3 #pyjama {
-    height: 160px;
+    height: 140px;
   }
 }
 
 @media (min-width: 992px) {
   .wit .oorzaken .oorzaak3 #pyjama {
-    height: 200px;
+    height: 160px;
   }
 }
 
@@ -439,32 +439,37 @@ body {
   background-color: #15A2B1;
   padding: 20px;
   border-radius: 60px;
-  margin: -160px 0px 0px -310px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
 }
 
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak3 p.meertekst3 {
+    margin-top: 15px;
+  }
+}
+
 .wit .oorzaken .oorzaak4 {
   position: absolute;
-  top: 80%;
+  top: 100%;
   left: 80%;
 }
 
 .wit .oorzaken .oorzaak4 #uitnodiging {
-  height: 150px;
+  height: 100px;
   width: auto;
 }
 
 @media (min-width: 768px) {
   .wit .oorzaken .oorzaak4 #uitnodiging {
-    height: 170px;
+    height: 130px;
   }
 }
 
 @media (min-width: 992px) {
   .wit .oorzaken .oorzaak4 #uitnodiging {
-    height: 200px;
+    height: 160px;
   }
 }
 
@@ -478,11 +483,96 @@ body {
   z-index: 1;
   background-color: #15A2B1;
   padding: 20px;
+  margin: -220px 0px 0px -100px;
   border-radius: 60px;
-  margin: -160px 0px 0px -410px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
+}
+
+.wit .oorzaken .oorzaak5 {
+  position: absolute;
+  top: 120%;
+  left: 40%;
+}
+
+.wit .oorzaken .oorzaak5 #chocolade {
+  height: 100px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak5 #chocolade {
+    height: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak5 #chocolade {
+    height: 160px;
+  }
+}
+
+.wit .oorzaken .oorzaak5 #chocolade:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.wit .oorzaken .oorzaak5 p.meertekst5 {
+  display: none;
+  z-index: 1;
+  background-color: #15A2B1;
+  padding: 20px;
+  margin: -215px 0px 0px;
+  border-radius: 60px;
+  font-family: "Shadows Into Light Two", cursive;
+  color: #ffff;
+  font-style: italic;
+}
+
+.wit .oorzaken .oorzaak6 {
+  position: absolute;
+  top: -80%;
+  left: 40%;
+}
+
+.wit .oorzaken .oorzaak6 #mandje {
+  height: 90px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak6 #mandje {
+    height: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak6 #mandje {
+    height: 160px;
+  }
+}
+
+.wit .oorzaken .oorzaak6 #mandje:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.wit .oorzaken .oorzaak6 p.meertekst6 {
+  display: none;
+  z-index: 1;
+  background-color: #15A2B1;
+  padding: 20px;
+  border-radius: 60px;
+  font-family: "Shadows Into Light Two", cursive;
+  color: #ffff;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak6 p.meertekst6 {
+    margin-top: 10px;
+  }
 }
 
 /*einde oorzaken*/

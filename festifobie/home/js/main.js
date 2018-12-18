@@ -55,6 +55,31 @@ $(document).ready(function(){
   });
 });
 
+
+$(document).ready(function(){
+  $("#chocolade").mouseenter(function(){
+    $("p.meertekst5").show(300);
+  });
+  $("#chocolade").mouseenter(function(){
+    $("p.meertekst5").display(inline);
+  });
+  $("#chocolade").mouseleave(function(){
+    $("p.meertekst5").hide(300);
+  });
+});
+
+$(document).ready(function(){
+  $("#mandje").mouseenter(function(){
+    $("p.meertekst6").show(300);
+  });
+  $("#mandje").mouseenter(function(){
+    $("p.meertekst6").display(inline);
+  });
+  $("#mandje").mouseleave(function(){
+    $("p.meertekst6").hide(300);
+  });
+});
+
 /*einde oorzaken*/
 
 /*begin zelfhulpgroep uitleg*/

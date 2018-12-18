@@ -227,18 +227,18 @@ body {
         }
         .oorzaak1 {
             position: absolute;
-            top: -90%;
+            top: -50%;
             left: 5%;
 
 
             #zoen {
-                height: 100px;
+                height: 90px;
                 width: auto;
                 @media (min-width: $breekpunt1) {
-                    height: 170px;
+                    height: 120px;
                 }
                 @media (min-width: $breekpunt2) {
-                    height: 200px;
+                    height: 160px;
                 }
             }
 
@@ -253,7 +253,7 @@ body {
                 background-color: $color1;
                 padding: 20px;
                 border-radius: 60px;
-                margin-top: 60px;
+                margin-top: 10px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
@@ -269,13 +269,13 @@ body {
             }
 
             #zak {
-                height: 120px;
+                height: 90px;
                 width: auto;
                 @media (min-width: $breekpunt1) {
-                    height: 170px;
+                    height: 120px;
                 }
                 @media (min-width: $breekpunt2) {
-                    height: 200px;
+                    height: 160px;
                 }
             }
 
@@ -289,7 +289,7 @@ body {
                 background-color: $color1;
                 padding: 20px;
                 border-radius: 60px;
-                margin: -160px 0px 0px 180px;
+                margin: -180px 0px 0px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
@@ -305,10 +305,10 @@ body {
                 height: 100px;
                 width: auto;
                 @media (min-width: $breekpunt1) {
-                    height: 160px;
+                    height: 140px;
                 }
                 @media (min-width: $breekpunt2) {
-                    height: 200px;
+                    height: 160px;
                 }
             }
 
@@ -322,26 +322,28 @@ body {
                 background-color: $color1;
                 padding: 20px;
                 border-radius: 60px;
-                margin: -160px 0px 0px -310px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+                @media (min-width: $breekpunt1){
+                    margin-top: 15px;
+                }
             }
         }
         
         .oorzaak4 {
             position: absolute;
-            top: 80%;
+            top: 100%;
             left: 80%;
                     
             #uitnodiging {
-                height: 150px;
+                height: 100px;
                 width: auto;
                 @media (min-width: $breekpunt1) {
-                    height: 170px;
+                    height: 130px;
                 }
                 @media (min-width: $breekpunt2) {
-                    height: 200px;
+                    height: 160px;
                 }
             }
             
@@ -354,11 +356,80 @@ body {
                 z-index: 1;
                 background-color: $color1;
                 padding: 20px;
+                margin: -220px 0px 0px -100px;
                 border-radius: 60px;
-                margin: -160px 0px 0px -410px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+            }
+        }
+
+        .oorzaak5 {
+            position: absolute;
+            top: 120%;
+            left: 40%;
+                    
+            #chocolade {
+                height: 100px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 120px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 160px;
+                }
+            }
+            
+            #chocolade:hover {
+                transform: scale(1.5);
+            }
+
+            p.meertekst5 {
+                display: none;
+                z-index: 1;
+                background-color: $color1;
+                padding: 20px;
+                margin: -215px 0px 0px;
+                border-radius: 60px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+            }
+        }
+
+        .oorzaak6 {
+            position: absolute;
+            top: -80%;
+            left: 40%;
+                    
+            #mandje {
+                height: 90px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 130px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 160px;
+                }
+            }
+            
+            #mandje:hover {
+                transform: scale(1.5);
+            }
+
+            p.meertekst6 {
+                display: none;
+                z-index: 1;
+                background-color: $color1;
+                padding: 20px;
+                border-radius: 60px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+                @media (min-width: $breekpunt1) {
+                    margin-top: 10px;
+                }
+
             }
         }
     }
