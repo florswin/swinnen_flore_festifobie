@@ -298,6 +298,12 @@ body {
   padding-bottom: 200px;
 }
 
+@media (min-width: 992px) {
+  .wit {
+    padding: 250px 0px;
+  }
+}
+
 .wit .oorzaken {
   position: relative;
 }
@@ -405,6 +411,12 @@ body {
   font-style: italic;
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak2 p.meertekst2 {
+    margin: -230px 0px 0px;
+  }
+}
+
 .wit .oorzaken .oorzaak3 {
   position: absolute;
   top: -65%;
@@ -490,6 +502,12 @@ body {
   font-style: italic;
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak4 p.meertekst4 {
+    margin: -280px 0px 0px -100px;
+  }
+}
+
 .wit .oorzaken .oorzaak5 {
   position: absolute;
   top: 120%;
@@ -530,10 +548,24 @@ body {
   font-style: italic;
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak5 p.meertekst5 {
+    margin: -225px 0px 0px;
+  }
+}
+
 .wit .oorzaken .oorzaak6 {
   position: absolute;
   top: -80%;
   left: 40%;
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak6 {
+    position: absolute;
+    top: -100%;
+    left: 40%;
+  }
 }
 
 .wit .oorzaken .oorzaak6 #mandje {

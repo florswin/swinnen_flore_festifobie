@@ -209,6 +209,9 @@ body {
     margin-top: 50px;
     padding-top: 200px;
     padding-bottom: 200px; 
+    @media (min-width: $breekpunt2) {
+        padding: 250px 0px;
+    }
     .oorzaken {
         position: relative;
         
@@ -293,6 +296,9 @@ body {
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+                @media (min-width: $breekpunt2) {
+                   margin: -230px 0px 0px;
+                }
             }
         }
     
@@ -361,6 +367,9 @@ body {
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+                @media (min-width: $breekpunt2) {
+                    margin: -280px 0px 0px -100px;
+                }
             }
         }
 
@@ -394,6 +403,9 @@ body {
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+                @media (min-width: $breekpunt2) {
+                   margin: -225px 0px 0px;
+                }
             }
         }
 
@@ -401,6 +413,11 @@ body {
             position: absolute;
             top: -80%;
             left: 40%;
+            @media (min-width: $breekpunt2) {
+                    position: absolute;
+                    top:-100%;
+                    left: 40%;
+            }
                     
             #mandje {
                 height: 90px;
