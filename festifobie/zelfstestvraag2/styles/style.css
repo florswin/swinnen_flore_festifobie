@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*tablets*/
+/*desktops*/
+/*grote desktops*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #223A52;
+  color: black;
+}
+
+.navbar {
+  background-color: #15A2B1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  margin: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .navbar-brand {
+  color: #223A52;
+}
+
+.navbar .nav-link:hover {
+  color: #C73D1B;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.inleiding {
+  background-color: #223A52;
+  text-align: center;
+  color: white;
+  margin-top: 130px;
+}
+
+.inleiding h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 4em;
+}
+
+.zelftest {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 70px;
+  padding: 30px;
+}
+
+@media (min-width: 992px) {
+  .zelftest {
+    width: 60%;
+  }
+}
+
+.zelftest h1 {
+  font-size: 1.5em;
+}
+
+.zelftest #vraag {
+  font-family: "Roboto", sans-serif;
+  background-color: #C73D1B;
+  color: white;
+  border-radius: 100px;
+  padding: 10px;
+  font-style: italic;
+}
+
+.zelftest .antwoord {
+  border-color: red;
+}
+
+.zelftest .vragenvolgorde {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.zelftest .vragenvolgorde #vorige {
+  color: #C73D1B;
+  margin: 10px 0px 10px;
+}
+
+.zelftest .vragenvolgorde #volgende {
+  color: #C73D1B;
+  visibility: hidden;
+  margin: 10px 0px 10px;
+}
+
+.zelftest .vragenvolgorde #volgende:hover, .zelftest .vragenvolgorde #vorige:hover {
+  color: #223A52;
+  text-decoration: none;
+}
+
+.zelftest .progress {
+  border-radius: 50px;
+}
+
+.zelftest .progress .progress-bar {
+  border-radius: 50px;
+  background-color: #C73D1B;
+}
+
+.footer {
+  background-color: #223A52;
+  color: white;
+  margin-top: 105px;
+}
+
+.footer .icon {
+  width: 30px;
+  padding: 0px 10px 10px 0px;
+}
+
+.footer .inline {
+  display: inline;
+}
+
+.footer #e-mail {
+  border-radius: 100px;
+  padding: 2px 5px;
+}
+
+.footer #inschrijven {
+  border-radius: 100px;
+  background-color: #C73D1B;
+  color: white;
+  padding: 2px 5px;
+}
+/*# sourceMappingURL=style.css.map */

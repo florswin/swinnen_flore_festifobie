@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zelftest</title>
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <!--fontawesome-->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+        <!-- Custom CSS x -->
+        <link href="styles/style.css" rel="stylesheet">
+            
+        <!-- Javascript files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">EaseMind</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../zelftestvraag1/vraag.html">Zelftest</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../zelfhulpgroep/hulp.html">Zelfhulpgroep</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../steun/steun.html">Steun ons </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../lees/lees.html">Lees </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#endpage">Contact</a>
+      </ul>
+    </div>
+</nav>
+  <!--einde nav bar-->
+
+<div class="container-fluid">
+    <div class="container inleiding">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1>
+                    Zelftest
+                </h1>
+                <p>Test nu jouw mate van Festifobie-angst met de gratis zelftest.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container zelftest">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1>
+                    Geef voor volgende uitspraak aan wat voor u het meest van toepassing was de voorbije week.
+                </h1>
+                <p id="vraag">Bij het kijken naar de kalender/datum, voelde ik me onrustig worden.</p>
+                <form action="#">
+                    <input class="antwoord" type="radio" onclick="myFunction()" name="eens/oneens" value="helemaal mee eens">
+                    <label for="helemaal mee eens">Helemaal mee eens</label></br>
+                    <input class="antwoord" type="radio" onclick="myFunction()" name="eens/oneens" value="gedeeltelijk mee eens">
+                    <label for="gedeeltelijk mee eens">Gedeeltelijk mee eens</label></br>
+                    <input class="antwoord" type="radio" onclick="myFunction()" name="eens/oneens" value="neutraal">
+                    <label for="neutraal">Neutraal</label></br>
+                    <input class="antwoord" type="radio" onclick="myFunction()" name="eens/oneens" value="oneens">
+                    <label for="oneens">Oneens</label></br>
+                </form>
+                <div class="vragenvolgorde">
+                    <a href="#" id="vorige">vorige vraag</a>
+                    <a href="../zelfstestvraag2/vraag2.html" id="volgende">volgende vraag</a>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                          5%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--einde zelftest-->
+<div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h3 id="endpage">
+                        Contact
+                    </h3>
+                    <p><img class="icon" src="styles/images/huisje.png" alt="huisicoon">Antwerpselaan 2
+                        1060 Brussel, België</p>
+                    <p><img class="icon" src="styles/images/telefoon.png" alt="telefoonicoon">02 576 17 12</p>
+                    <p><img class="icon" src="styles/images/fax.png" alt="faxicoon">02 536 98 45</p>
+                    <p><img class="icon" src="styles/images/messenger2.png" alt="mailicoon"><a class="mailto" href="mailto:info@easemind.be">info@easemind.be</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>
+                        Openingsuren
+                    </h3>
+                    <p>Ma-vrij: 08u30 - 20u00</p>
+                    <p>Za: 08u30 - 19u00</p>
+                    <p>Zon- en feestdagen: gesloten</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>
+                        volg ons                
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                    </h3>
+    
+                    <form action="#"> 
+                        <fieldset>
+                            <label for="e-mail">Schrijf je in op onze nieuwsbrief</label>
+                            <input type="text" id="e-mail" name="e-mail" placeholder="e-mailadres">
+                            <input type="submit" id="inschrijven" value="inschrijven"> 
+                        </fieldset>
+                    </form> 
+                    <div class="bedankt">
+                        <p class="inschrijving">Bedankt voor je inschrijving! </br>
+                            Ontvang vanaf nu maandelijks onze nieuwsbrief!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

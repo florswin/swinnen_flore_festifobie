@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #223A52;
+  color: white;
+}
+
+.navbar {
+  background-color: #15A2B1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  margin: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .navbar-brand {
+  color: #223A52;
+}
+
+.navbar .nav-link:hover {
+  color: #C73D1B;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.text {
+  margin-top: 100px;
+}
+
+.text h1, .text h2 {
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.text h1 {
+  margin-bottom: 50px;
+  font-size: 6em;
+}
+
+.text h2 {
+  margin-bottom: 15px;
+}
+
+.text p {
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+/*einde tekst*/
+/*begin sidebar*/
+.sidebar {
+  background-color: #C73D1B;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sidebar h4 {
+  font-family: "Shadows Into Light Two", cursive;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0px 30px;
+}
+
+.sidebar .lijstitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sidebar .lijstitem h6 {
+  font-size: 1.2em;
+}
+
+.sidebar .lijstitem .onderschrift {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.sidebar .lijstitem .bedrag {
+  background-color: #223A52;
+  border-radius: 1000px;
+  padding: 20px;
+}
+
+.sidebar .lijstitem .plus {
+  padding: 20px 15px;
+}
+
+.donatebutton h3 {
+  background-color: #15A2B1;
+  text-align: center;
+  line-height: 64px;
+  border-radius: 80px;
+  width: 100%;
+  color: #ffff;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .donatebutton h3 {
+    width: 70%;
+  }
+}
+
+.donatebutton h3:hover {
+  color: #C73D1B;
+  background-color: #ffff;
+}
+
+.donatebutton:hover {
+  text-decoration: none;
+}
+
+.progress {
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  .progress {
+    width: 70%;
+  }
+}
+
+.progress .progress-bar {
+  border-radius: 50px;
+  background-color: #C73D1B;
+}
+
+.schaal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .schaal #vijftienduizend {
+    margin-right: 220px;
+  }
+}
+
+.aantal {
+  font-size: 2.75em;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #15A2B1;
+  padding-top: 40px;
+}
+
+.footer #telefoon {
+  width: 25%;
+}
+
+.footer .icon {
+  width: 30px;
+  padding: 0px 10px 10px 0px;
+}
+
+.footer .mailto {
+  color: white;
+}
+
+.footer .mailto:hover {
+  color: #C73D1B;
+  text-decoration: none;
+}
+
+.footer .inline {
+  display: inline;
+}
+
+.footer #e-mail {
+  border-radius: 100px;
+  padding: 2px 5px;
+}
+
+.footer #inschrijven {
+  border-radius: 100px;
+  background-color: #C73D1B;
+  color: #ffff;
+  padding: 2px 5px;
+}
+/*# sourceMappingURL=style.css.map */

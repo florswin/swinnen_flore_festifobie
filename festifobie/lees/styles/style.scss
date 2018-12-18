@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack');
+
+$color1: #15A2B1;
+$color2: #223A52;
+$color3: #C73D1B;
+$color4: #ffff; 
+
+$alpha1: 0.5;
+
+$fontset1: 'Shadows Into Light Two', cursive;
+$fontset2: 'Reenie Beanie', cursive;
+$fontset3: 'Short Stack', cursive;
+$fontset4: 'Roboto', sans-serif;
+
+$breekpunt1: 768px; /*tablets*/
+$breekpunt2: 992px; /*desktops*/
+$breekpunt3: 1200px; /*grote desktops*/
+
+*{
+    padding: 0; 
+    margin: 0;
+    font-family: $fontset4;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: $color2;
+    color: $color4;
+}
+
+.navbar {
+    background-color: $color1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px 20px;
+    margin: 0px;
+    width: 100%;
+    z-index: 1;
+    .nav-link {
+        color: $color4;
+    }
+
+    .navbar-brand {
+        color: $color2;
+    }
+
+    .nav-link:hover {
+        color: $color3;
+        background-color: $color4;
+        border-radius: 30px;
+    }
+}
+
+.container-fluid {
+    .container {
+        margin-top: 100px;
+        .row {
+            .col-md-12 {
+                h1 {
+                    font-family: $fontset1;
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                    @media (min-width: $breekpunt1){
+                        font-size: 6em;
+                    }
+                    em {
+                        font-family: $fontset1;
+                        color: $color3;
+                        font-style: normal;
+                        
+                    }
+                }
+                .festifobist {
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+/*einde titel*/
+
+.luc {
+    height: 500px; 
+    margin: -100px 0px -160px -110px;
+
+    @media (min-width: $breekpunt1) {
+      height: 700px;  
+      margin: -135px 0px -180px 0px;
+    }
+    @media (min-width: $breekpunt2) {
+        height: 900px;  
+      }
+}
+
+/*einde krans*/
+
+.leestekst {
+    .tussentitels {
+        font-family: $fontset1;
+        margin-bottom: 40px;
+        color: $color1;
+        font-size: 2.3em;
+        line-height: 1.4em;
+        em {
+            font-style: normal;
+            color: $color4;
+            font-family: $fontset1;
+        }
+    }
+}
+
+.bol {
+    position: relative; 
+    .blauwebol {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        height: 500px;
+        z-index: 0;
+    }
+    .introluc {
+        z-index:1;
+        h2 {
+            font-family: $fontset1;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+    
+        .zelfhulpgroepbutton {
+            background-color: $color3;
+            color: $color4;
+            padding: 10px 20px;
+            border-radius: 100px;
+        }
+    }
+
+}
+
+.icon{
+    width: 30px;
+    padding: 0px 10px 10px 0px;
+
+}
+.inline{
+    display: inline;
+}
+
+#e-mail {
+    border-radius: 100px;
+    padding: 2px 5px;
+}
+
+#inschrijven {
+    border-radius: 100px;
+    background-color: $color3;
+    color: $color4;
+    padding: 2px 5px;
+}

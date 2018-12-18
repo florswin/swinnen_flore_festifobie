@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*tablets*/
+/*desktops*/
+/*grote desktops*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #223A52;
+  color: #ffff;
+}
+
+.navbar {
+  background-color: #15A2B1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  margin: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-link {
+  color: #ffff;
+}
+
+.navbar .navbar-brand {
+  color: #223A52;
+}
+
+.navbar .nav-link:hover {
+  color: #C73D1B;
+  background-color: #ffff;
+  border-radius: 30px;
+}
+
+.container-fluid .container {
+  margin-top: 100px;
+}
+
+.container-fluid .container .row .col-md-12 h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .container-fluid .container .row .col-md-12 h1 {
+    font-size: 6em;
+  }
+}
+
+.container-fluid .container .row .col-md-12 h1 em {
+  font-family: "Shadows Into Light Two", cursive;
+  color: #C73D1B;
+  font-style: normal;
+}
+
+.container-fluid .container .row .col-md-12 .festifobist {
+  line-height: 1.4em;
+}
+
+/*einde titel*/
+.luc {
+  height: 500px;
+  margin: -100px 0px -160px -110px;
+}
+
+@media (min-width: 768px) {
+  .luc {
+    height: 700px;
+    margin: -135px 0px -180px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .luc {
+    height: 900px;
+  }
+}
+
+/*einde krans*/
+.leestekst .tussentitels {
+  font-family: "Shadows Into Light Two", cursive;
+  margin-bottom: 40px;
+  color: #15A2B1;
+  font-size: 2.3em;
+  line-height: 1.4em;
+}
+
+.leestekst .tussentitels em {
+  font-style: normal;
+  color: #ffff;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.bol {
+  position: relative;
+}
+
+.bol .blauwebol {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 500px;
+  z-index: 0;
+}
+
+.bol .introluc {
+  z-index: 1;
+}
+
+.bol .introluc h2 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.bol .introluc .zelfhulpgroepbutton {
+  background-color: #C73D1B;
+  color: #ffff;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.icon {
+  width: 30px;
+  padding: 0px 10px 10px 0px;
+}
+
+.inline {
+  display: inline;
+}
+
+#e-mail {
+  border-radius: 100px;
+  padding: 2px 5px;
+}
+
+#inschrijven {
+  border-radius: 100px;
+  background-color: #C73D1B;
+  color: #ffff;
+  padding: 2px 5px;
+}
+/*# sourceMappingURL=style.css.map */

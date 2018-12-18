@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack');
+
+$color1: #15A2B1;
+$color2: #223A52;
+$color3: #C73D1B;
+$color4: #ffff; 
+
+$alpha1: 0.1;
+
+$fontset1: 'Shadows Into Light Two', cursive;
+$fontset2: 'Reenie Beanie', cursive;
+$fontset3: 'Short Stack', cursive;
+$fontset4: 'Roboto', sans-serif;
+
+$breekpunt1: 768px; /*tablets*/
+$breekpunt2: 992px; /*desktops*/
+$breekpunt3: 1200px; /*grote desktops*/
+
+*{
+    padding: 0; 
+    margin: 0;
+    font-family: $fontset4;
+    box-sizing:border-box;
+    line-height: 1.6em;
+}
+
+body {
+    background-color: $color2;
+    color: $color4;
+}
+
+
+.navbar {
+    background-color: $color1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px 20px;
+    margin: 0px;
+    width: 100%;
+    z-index: 1;
+    .nav-link {
+        color: $color4;
+    }
+
+    .navbar-brand {
+        color: $color2;
+    }
+
+    .nav-link:hover {
+        color: $color3;
+        background-color: $color4;
+        border-radius: 30px;
+    }
+}
+
+.container-donker {
+    margin-top: 100px;
+        
+        h1 {
+            font-family: $fontset1;
+            font-size: 7em;
+            
+            @media (min-width: $breekpunt1) {
+                font-size: 12em;}
+        }
+        p {
+            font-size: 0.9em;
+            line-height: 1.6em;
+        }
+
+        #leesmeer {
+            color: $color1;
+            background-color: rgba(white, 0.1);
+            padding: 5px 10px;;
+            border-radius: 50px;
+        }
+
+        #leesmeer:hover{
+        background-color: $color4;
+        color: $color3;
+        text-decoration: none;
+        }
+
+
+
+        #vervolgtekst {
+            visibility: hidden;
+            position: relative;
+
+            #Laag_1{
+                position: absolute;
+                left: 70%;
+                bottom: 0%;
+                width: 20px;
+                margin: -20px;
+            }
+        }
+
+        .angst {
+            position: relative;
+            .angstig {
+                width: 80%;
+                height: auto;
+                margin-left: 50px;
+
+
+                @media (min-width: $breekpunt1){
+                    margin-left: 100px;
+                    margin-top: 140px;
+                }
+                
+                @media (min-width: $breekpunt2){
+                    margin-left: 100px;
+                    margin-top:-30px;
+                }
+            }
+
+            .angstig:hover {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+              }
+
+            .text1, .text2, .text3, .text4, .text5 {
+                position: absolute;
+                font-family: $fontset1;
+                font-size: 1.4em;
+            }
+            .text1 {
+                left: -5%;
+                top: 40%;
+                transform: rotate(-15deg);
+            }
+            .text2 {
+                left: 75%;
+                top: 65%;
+                transform: rotate(30deg);
+            }
+            .text3 {
+                left: 100%;
+                top: 10%;
+                transform: rotate(10deg);
+            }
+            .text4 {
+                left: 90%;
+                top: 40%;
+                transform: rotate(40deg);
+            }
+            .text5 {
+                left: 10%;
+                top: 70%;
+                transform: rotate(-30deg);
+            }
+
+            .expectationbutton {
+                position: absolute;
+                top: 90%;
+                left: 0%;
+                color: $color4;
+                background-color: $color3;
+                line-height: 64px;
+                padding: 5px 30px;
+                border-radius: 100px;
+                font-size: 1.2em;
+                width: 100%;
+                text-align: center;
+                
+                @media (min-width: $breekpunt1){
+                    top: 90%;
+                    left: 20%;
+                    line-height: 30px;
+                }
+
+                @media (min-width: $breekpunt3){
+                    top: 90%;
+                    left: 10%;
+                    line-height: 64px;
+                }
+
+            }
+            .expectationbutton:hover {
+                background-color: $color4;
+                color: $color3;
+                text-decoration: none;
+            }
+        }
+
+}
+
+/*einde eerste container (inleiding + afbeelding)*/ 
+
+.wit {
+    background-color: $color4;
+    color: black;
+    margin-top: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    .oorzaken {
+        position: relative;
+        
+        h2 {
+            font-family: $fontset1;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p.paragraph {
+            text-align: center;
+            em {
+                font-style: normal;
+                font-size: 1.8em;
+            }
+        }
+        .oorzaak1 {
+            position: absolute;
+            top: -90%;
+            left: 5%;
+
+
+            #zoen {
+                height: 100px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 170px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 200px;
+                }
+            }
+
+            #zoen:hover {
+                transform: scale(1.5);
+                z-index: -1;
+            }
+        
+            p.meertekst1 {
+                display: none;
+                z-index: 2;
+                background-color: $color1;
+                padding: 20px;
+                border-radius: 60px;
+                margin-top: 60px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+            }
+        }
+
+        .oorzaak2 {
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            @media (min-width: $breekpunt2) {
+                top: 90%;
+            }
+
+            #zak {
+                height: 120px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 170px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 200px;
+                }
+            }
+
+            #zak:hover {
+                transform: scale(1.5);
+            }
+
+            p.meertekst2 {
+                display: none;
+                z-index: 1;
+                background-color: $color1;
+                padding: 20px;
+                border-radius: 60px;
+                margin: -160px 0px 0px 180px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+            }
+        }
+    
+        .oorzaak3 {
+            position:absolute; 
+            top:-65%;
+            left: 70%;
+            
+            #pyjama {
+                height: 100px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 160px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 200px;
+                }
+            }
+
+            #pyjama:hover {
+                transform: scale(1.5);
+            }
+
+            p.meertekst3 {
+                display:none;
+                z-index: 1;
+                background-color: $color1;
+                padding: 20px;
+                border-radius: 60px;
+                margin: -160px 0px 0px -310px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+            }
+        }
+        
+        .oorzaak4 {
+            position: absolute;
+            top: 80%;
+            left: 80%;
+                    
+            #uitnodiging {
+                height: 150px;
+                width: auto;
+                @media (min-width: $breekpunt1) {
+                    height: 170px;
+                }
+                @media (min-width: $breekpunt2) {
+                    height: 200px;
+                }
+            }
+            
+            #uitnodiging:hover {
+                transform: scale(1.5);
+            }
+
+            p.meertekst4 {
+                display: none;
+                z-index: 1;
+                background-color: $color1;
+                padding: 20px;
+                border-radius: 60px;
+                margin: -160px 0px 0px -410px;
+                font-family: $fontset1; 
+                color: $color4;
+                font-style: italic;
+            }
+        }
+    }
+}
+/*einde oorzaken*/
+
+
+.lichtblauw {
+    background-color: $color1;
+    text-align: center;
+    @media (min-width: $breekpunt1) {
+        text-align: left;
+    }
+    .symptomen {
+        margin: 110px 0px;
+            h2 {
+                font-family: $fontset1;
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+            p.uitlegkalender {
+                line-height: 25px;
+                em {
+                    font-size: 1.8em;
+                    font-style: normal;
+                }
+            }
+
+            p.twijfel {
+                margin-top: 40px;
+            }
+
+            .zelftestbutton {
+                color: $color4;
+                background-color: $color3;
+                padding: 15px 20px;
+                border-radius: 50px;
+                line-height: 64px;
+                font-size: 1.2em;
+            }
+            .zelftestbutton:hover {
+                background-color: $color4;
+                color: $color3;
+                text-decoration: none;
+            }
+        
+    }
+    .kalender {
+        display: none;
+        filter: drop-shadow(2px 2px 7px black); 
+        
+        @media (min-width: $breekpunt1) {
+            height: 400px;
+            width: auto;
+            margin: -7px 0px 0px 70px;
+            display: block;
+            }
+    }
+}   
+  
+
+/*einde symptomen*/
+
+.praat {
+    margin: 150px 0px;
+    position: relative;
+    .uitroep {
+        position: absolute;
+        top: 10%;
+        left: -2%;
+    }
+    .praatoproep {
+        text-align: center;
+        position: relative; 
+        h2 {
+            font-family: $fontset1;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p.hulptekst {
+            line-height: 1.6em;
+            em {
+                font-size: 1.8em;
+                font-style: normal;
+            }
+        }
+
+        p.lidmaatschap {
+            margin: 50px 0px 10px 0px;
+        }
+        
+        #zelfhulpgroepbutton {
+            color: $color4;
+            background-color: $color3;
+            padding: 15px 20px;
+            border-radius: 50px;
+            line-height: 64px;
+            font-size: 1.2em;
+        }
+        #zelfhulpgroepbutton:hover {
+            background-color: $color4;
+            color: $color3;
+            text-decoration: none;
+        }
+        .verborgenuitleg {
+            display: none;
+            #spraakballon {
+                height: 250px;
+                width: auto;
+                transform: rotate(400deg);
+
+                @media (min-width: $breekpunt1) {
+                    position: absolute;
+                    bottom: -10%;
+                    left: 60%;
+                    transform: none;
+                    height: 250px;
+                    width: auto;
+                }
+
+                @media (min-width: $breekpunt2) {
+                    position: absolute;
+                    bottom: -10%;
+                    left: 60%;
+                    transform: none;
+                }
+            }
+            #uitleg {
+                font-size: 0.8em;
+                color: black;
+                font-family: $fontset1;
+                position: absolute;
+                bottom: 7%;
+                left: 30%;
+
+                @media (min-width: $breekpunt1){
+                    position: absolute;
+                    bottom: 0%;
+                    left: 80%;
+                }
+
+                @media (min-width: $breekpunt2){
+                    position: absolute;
+                    bottom: 10%;
+                    left: 72%;
+                }
+
+                @media (min-width: $breekpunt3){
+                    position: absolute;
+                    bottom: 10%;
+                    left: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+/*einde praat*/
+
+/*hulpiconen*/
+.white {
+    background-color: $color4;
+    color: black; 
+    padding: 70px 0px 70px;
+
+    em {
+        font-size: 1.8em;
+        font-style: normal;
+    }
+    .hulpicoon {
+        height: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 30px 0px 15px;
+        @media (min-width: $breekpunt1) {
+            height: 100px;
+        }
+    }
+    
+
+    .gegevens {
+        color: black;
+    }
+
+    .gegevens:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+}
+
+
+/*einde hulpiconen*/
+
+/*begin footer*/
+
+.footer {
+    margin-top: 50px;
+
+    .icon{
+        width: 30px;
+        padding: 0px 10px 10px 0px;
+    }
+    
+    .mailto {
+        color: white;
+    }
+    
+    .mailto:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+    
+    .inline{
+        display: inline;
+    }
+    
+    #e-mail {
+        border-radius: 100px;
+        padding: 2px 5px;
+    }
+    
+    #inschrijven {
+        border-radius: 100px;
+        background-color: $color3;
+        color:$color4;
+        padding: 2px 5px;
+    }
+    
+    .bedankt {
+        display: none;
+        position: relative;
+        .inschrijving {
+            background-color: $color3;
+            padding: 50px;
+            text-align: center;
+            position: absolute;
+            left: 0%;
+            bottom: 20%;
+            border-radius: 40px;
+        }
+    }
+}
+
