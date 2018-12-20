@@ -55,7 +55,7 @@ body {
   font-size: 7em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-donker h1 {
     font-size: 12em;
   }
@@ -549,7 +549,7 @@ body {
   font-style: italic;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .wit .oorzaken .oorzaak4 p.meertekst4 {
     margin: -280px 0px 0px -100px;
   }
@@ -726,9 +726,18 @@ body {
 }
 
 .praat .uitroep {
+  width: 500px;
   position: absolute;
-  top: 10%;
-  left: -2%;
+  top: 0%;
+  left: 2%;
+}
+
+@media (min-width: 768px) {
+  .praat .uitroep {
+    position: absolute;
+    top: 10%;
+    left: -2%;
+  }
 }
 
 .praat .praatoproep {
@@ -944,7 +953,7 @@ body {
   border-radius: 40px;
 }
 
-.test2 {
+.hulpiconen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,15 +966,15 @@ body {
           justify-content: space-between;
 }
 
-.test2 .icoon1 .mail {
+.hulpiconen .icoon1 .mail {
   display: block;
 }
 
-.test2 .icoon2 .chat {
+.hulpiconen .icoon2 .chat {
   display: block;
 }
 
-.test2 .icoon3 .telefoon {
+.hulpiconen .icoon3 .telefoon {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */

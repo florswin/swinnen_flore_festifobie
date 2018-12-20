@@ -68,8 +68,7 @@ body {
         h1 {
             font-family: $fontset1;
             font-size: 7em;
-            
-            @media (min-width: $breekpunt1) {
+            @media (min-width: $breekpunt2) {
                 font-size: 12em;}
         }
         p {
@@ -398,7 +397,7 @@ body {
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
-                @media (min-width: $breekpunt2) {
+                @media (min-width: $breekpunt3) {
                     margin: -280px 0px 0px -100px;
                 }
             }
@@ -545,9 +544,15 @@ body {
     margin: 150px 0px;
     position: relative;
     .uitroep {
+        width: 500px;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+        
+        @media (min-width: $breekpunt1) {
         position: absolute;
         top: 10%;
-        left: -2%;
+        left: -2%;}
     }
     .praatoproep {
         text-align: center;
@@ -741,7 +746,7 @@ body {
 }
 
 
-.test2 {
+.hulpiconen {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
