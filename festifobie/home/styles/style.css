@@ -27,6 +27,12 @@ body {
   z-index: 1;
 }
 
+.navbar .navbar-toggler-icon {
+  background-color: #15A2B1;
+  background-image: url("../styles/images/huisje.png");
+  background-repeat: no-repeat;
+}
+
 .navbar .nav-link {
   color: #ffff;
 }
@@ -36,11 +42,10 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #C73D1B;
-  background-color: #ffff;
-  border-radius: 30px;
+  color: #223A52;
 }
 
+/*einde navbar*/
 .container-donker {
   margin-top: 100px;
 }
@@ -215,28 +220,61 @@ body {
 .container-donker .angst .text1, .container-donker .angst .text2, .container-donker .angst .text3, .container-donker .angst .text4, .container-donker .angst .text5 {
   position: absolute;
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 1.4em;
+  font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text1, .container-donker .angst .text2, .container-donker .angst .text3, .container-donker .angst .text4, .container-donker .angst .text5 {
+    font-size: 1.4em;
+  }
 }
 
 .container-donker .angst .text1 {
-  left: -5%;
-  top: 40%;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  left: 5%;
+  top: 20%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text1 {
+    left: -5%;
+    top: 40%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
 }
 
 .container-donker .angst .text2 {
-  left: 75%;
-  top: 65%;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  left: 60%;
+  top: 75%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text2 {
+    left: 75%;
+    top: 65%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
 }
 
 .container-donker .angst .text3 {
-  left: 100%;
+  left: 80%;
   top: 10%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text3 {
+    left: 100%;
+    top: 10%;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
 }
 
 .container-donker .angst .text4 {
@@ -247,10 +285,19 @@ body {
 }
 
 .container-donker .angst .text5 {
-  left: 10%;
+  left: 5%;
   top: 70%;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text5 {
+    left: 10%;
+    top: 70%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
 }
 
 .container-donker .angst .expectationbutton {
@@ -804,11 +851,6 @@ body {
 
 .white .hulpicoon {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   margin: 30px 0px 15px;
 }
 
@@ -829,46 +871,70 @@ body {
 
 /*einde hulpiconen*/
 /*begin footer*/
-.footer {
-  margin-top: 50px;
+.footer .footer-container {
+  padding: 30px 0px;
 }
 
-.footer .icon {
+.footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+    margin-bottom: 0px;
+  }
+}
+
+.footer .footer-container .icon {
   width: 30px;
   padding: 0px 10px 10px 0px;
 }
 
-.footer .mailto {
+.footer .footer-container .mailto {
   color: white;
 }
 
-.footer .mailto:hover {
+.footer .footer-container .mailto:hover {
   color: #C73D1B;
   text-decoration: none;
 }
 
-.footer .inline {
+.footer .footer-container .inline {
   display: inline;
 }
 
-.footer #e-mail {
+.footer .footer-container #e-mail {
   border-radius: 100px;
   padding: 2px 5px;
+  display: block;
 }
 
-.footer #inschrijven {
+@media (min-width: 768px) {
+  .footer .footer-container #e-mail {
+    display: inline;
+  }
+}
+
+.footer .footer-container #inschrijven {
   border-radius: 100px;
   background-color: #C73D1B;
   color: #ffff;
   padding: 2px 5px;
+  margin-top: 10px;
 }
 
-.footer .bedankt {
+@media (min-width: 768px) {
+  .footer .footer-container #inschrijven {
+    margin-top: 0px;
+  }
+}
+
+.footer .footer-container .bedankt {
   display: none;
   position: relative;
 }
 
-.footer .bedankt .inschrijving {
+.footer .footer-container .bedankt .inschrijving {
   background-color: #C73D1B;
   padding: 50px;
   text-align: center;
@@ -876,5 +942,30 @@ body {
   left: 0%;
   bottom: 20%;
   border-radius: 40px;
+}
+
+.test2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.test2 .icoon1 .mail {
+  display: block;
+}
+
+.test2 .icoon2 .chat {
+  display: block;
+}
+
+.test2 .icoon3 .telefoon {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

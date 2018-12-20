@@ -13,7 +13,9 @@ $fontset3: 'Short Stack', cursive;
 $fontset4: 'Roboto', sans-serif;
 
 
-$breekpunt: 768px;
+$breekpunt1: 768px; /*tablets*/
+$breekpunt2: 992px; /*desktops*/
+$breekpunt3: 1200px; /*grote desktops*/
 
 *{
     padding: 0; 
@@ -23,9 +25,10 @@ $breekpunt: 768px;
 }
 
 body {
-    background-color: $color2;
+    background-color: $color1;
     color: white;
 }
+
 
 .navbar {
     background-color: $color1;
@@ -36,8 +39,15 @@ body {
     margin: 0px;
     width: 100%;
     z-index: 1;
+
+    .navbar-toggler-icon {
+        background-color: $color1;
+        background-image: url("../styles/images/huisje.png");
+        background-repeat: no-repeat;
+    }
+
     .nav-link {
-        color: white;
+        color: $color4;
     }
 
     .navbar-brand {
@@ -46,10 +56,10 @@ body {
 
     .nav-link:hover {
         color: $color3;
-        background-color: white;
-        border-radius: 30px;
     }
 }
+
+/*einde navbar*/
 
 .text {
     margin-top: 100px;

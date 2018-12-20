@@ -37,6 +37,13 @@ body {
     margin: 0px;
     width: 100%;
     z-index: 1;
+
+    .navbar-toggler-icon {
+        background-color: $color1;
+        background-image: url("../img/huisje.png");
+        background-repeat: no-repeat;
+    }
+
     .nav-link {
         color: $color4;
     }
@@ -46,22 +53,23 @@ body {
     }
 
     .nav-link:hover {
-        color: $color3;
-        background-color: $color4;
-        border-radius: 30px;
+        color: $color2;
     }
 }
+
 /*einde navbar*/
 
 .intro {
     margin-top: 100px;
     text-align: center; 
-    .introduction {
+    .introductie {
         h1 {
-            font-family:$fontset1;
+            font-family: $fontset1;
             margin-bottom: 20px;
+            font-size: 4em;
             em {
                 font-style: normal;
+                font-family: $fontset1;
                 color: $color3;
             }
         }

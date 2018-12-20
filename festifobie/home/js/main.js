@@ -12,6 +12,8 @@ $(document).ready(function(){
     $("#leesmeer").show(300);
   });
 });
+
+
 /*einde leesmeer inleiding*/
 
 

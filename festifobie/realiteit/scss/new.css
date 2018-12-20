@@ -26,6 +26,12 @@ body {
   z-index: 1;
 }
 
+.navbar .navbar-toggler-icon {
+  background-color: #15A2B1;
+  background-image: url("../img/huisje.png");
+  background-repeat: no-repeat;
+}
+
 .navbar .nav-link {
   color: #ffff;
 }
@@ -35,9 +41,7 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #C73D1B;
-  background-color: #ffff;
-  border-radius: 30px;
+  color: #223A52;
 }
 
 /*einde navbar*/
@@ -46,17 +50,19 @@ body {
   text-align: center;
 }
 
-.intro .introduction h1 {
+.intro .introductie h1 {
   font-family: "Shadows Into Light Two", cursive;
   margin-bottom: 20px;
+  font-size: 4em;
 }
 
-.intro .introduction h1 em {
+.intro .introductie h1 em {
   font-style: normal;
+  font-family: "Shadows Into Light Two", cursive;
   color: #C73D1B;
 }
 
-.intro .introduction p {
+.intro .introductie p {
   line-height: 1.8em;
 }
 

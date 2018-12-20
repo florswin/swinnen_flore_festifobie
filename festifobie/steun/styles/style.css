@@ -23,8 +23,14 @@ body {
   z-index: 1;
 }
 
+.navbar .navbar-toggler-icon {
+  background-color: #15A2B1;
+  background-image: url("../styles/images/huisje.png");
+  background-repeat: no-repeat;
+}
+
 .navbar .nav-link {
-  color: white;
+  color: #ffff;
 }
 
 .navbar .navbar-brand {
@@ -33,10 +39,11 @@ body {
 
 .navbar .nav-link:hover {
   color: #C73D1B;
-  background-color: white;
+  background-color: #ffff;
   border-radius: 30px;
 }
 
+/*einde navbar*/
 .text {
   margin-top: 100px;
 }
