@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*tablets*/
+/*desktops*/
+/*grote desktops*/
 * {
   padding: 0;
   margin: 0;
@@ -38,9 +41,7 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #C73D1B;
-  background-color: #ffff;
-  border-radius: 30px;
+  color: #223A52;
 }
 
 /*einde navbar*/
@@ -72,6 +73,7 @@ body {
   background-color: #C73D1B;
   padding-top: 20px;
   margin-bottom: 40px;
+  border-radius: 30px;
 }
 
 .sidebar h4 {
@@ -88,6 +90,51 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sidebar .lijstitem h6 {
+  font-size: 1.2em;
+}
+
+.sidebar .lijstitem .onderschrift {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.sidebar .lijstitem .bedrag {
+  background-color: #223A52;
+  border-radius: 1000px;
+  padding: 20px;
+}
+
+.sidebar .lijstitem .plus {
+  padding: 20px 15px;
+}
+
+.sidebar {
+  background-color: #C73D1B;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sidebar h4 {
+  font-family: "Shadows Into Light Two", cursive;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0px 30px;
+}
+
+.sidebar .lijstitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 40px;
 }
 
@@ -139,6 +186,7 @@ body {
   width: 100%;
   border-radius: 50px;
   margin-bottom: 7px;
+  height: 30px;
 }
 
 @media (min-width: 768px) {
@@ -168,46 +216,96 @@ body {
 }
 
 .aantal {
-  font-size: 2.75em;
+  font-size: 2.2em;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .aantal {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aantal {
+    font-size: 2.75em;
+  }
 }
 
 .footer {
-  margin-top: 100px;
   background-color: #15A2B1;
-  padding-top: 40px;
 }
 
-.footer #telefoon {
-  width: 25%;
+.footer .footer-container {
+  padding: 30px 0px;
 }
 
-.footer .icon {
+.footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+    margin-bottom: 0px;
+  }
+}
+
+.footer .footer-container .icon {
   width: 30px;
   padding: 0px 10px 10px 0px;
 }
 
-.footer .mailto {
+.footer .footer-container .mailto {
   color: white;
 }
 
-.footer .mailto:hover {
+.footer .footer-container .mailto:hover {
   color: #C73D1B;
   text-decoration: none;
 }
 
-.footer .inline {
+.footer .footer-container .inline {
   display: inline;
 }
 
-.footer #e-mail {
+.footer .footer-container #e-mail {
   border-radius: 100px;
   padding: 2px 5px;
+  display: block;
 }
 
-.footer #inschrijven {
+@media (min-width: 768px) {
+  .footer .footer-container #e-mail {
+    display: inline;
+  }
+}
+
+.footer .footer-container #inschrijven {
   border-radius: 100px;
   background-color: #C73D1B;
   color: #ffff;
   padding: 2px 5px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-container #inschrijven {
+    margin-top: 0px;
+  }
+}
+
+.footer .footer-container .bedankt {
+  display: none;
+  position: relative;
+}
+
+.footer .footer-container .bedankt .inschrijving {
+  background-color: #C73D1B;
+  padding: 50px;
+  text-align: center;
+  position: absolute;
+  left: 0%;
+  bottom: 20%;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=style.css.map */
