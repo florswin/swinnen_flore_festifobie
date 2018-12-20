@@ -66,51 +66,71 @@ body {
   line-height: 1.8em;
 }
 
-.kerstman {
-  margin-top: 100px;
-}
-
 /*begin footer*/
-.footer {
-  margin-top: 50px;
+.footer .footer-container {
+  padding: 30px 0px;
 }
 
-.footer .icon {
+.footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
+    margin-bottom: 0px;
+  }
+}
+
+.footer .footer-container .icon {
   width: 30px;
   padding: 0px 10px 10px 0px;
 }
 
-.footer .mailto {
+.footer .footer-container .mailto {
   color: white;
 }
 
-.footer .mailto:hover {
+.footer .footer-container .mailto:hover {
   color: #C73D1B;
   text-decoration: none;
 }
 
-.footer .inline {
+.footer .footer-container .inline {
   display: inline;
 }
 
-.footer #e-mail {
+.footer .footer-container #e-mail {
   border-radius: 100px;
   padding: 2px 5px;
+  display: block;
 }
 
-.footer #inschrijven {
+@media (min-width: 768px) {
+  .footer .footer-container #e-mail {
+    display: inline;
+  }
+}
+
+.footer .footer-container #inschrijven {
   border-radius: 100px;
   background-color: #C73D1B;
   color: #ffff;
   padding: 2px 5px;
+  margin-top: 10px;
 }
 
-.footer .bedankt {
+@media (min-width: 768px) {
+  .footer .footer-container #inschrijven {
+    margin-top: 0px;
+  }
+}
+
+.footer .footer-container .bedankt {
   display: none;
   position: relative;
 }
 
-.footer .bedankt .inschrijving {
+.footer .footer-container .bedankt .inschrijving {
   background-color: #C73D1B;
   padding: 50px;
   text-align: center;
