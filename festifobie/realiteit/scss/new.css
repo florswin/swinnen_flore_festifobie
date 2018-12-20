@@ -28,7 +28,7 @@ body {
 
 .navbar .navbar-toggler-icon {
   background-color: #15A2B1;
-  background-image: url("../styles/images/huisje.png");
+  background-image: url("../img/huisje.png");
   background-repeat: no-repeat;
 }
 
@@ -45,142 +45,28 @@ body {
 }
 
 /*einde navbar*/
-.container-fluid .container {
+.intro {
   margin-top: 100px;
+  text-align: center;
 }
 
-.container-fluid .container .row .head h1 {
+.intro .introductie h1 {
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 3em;
   margin-bottom: 20px;
+  font-size: 4em;
 }
 
-@media (min-width: 768px) {
-  .container-fluid .container .row .head h1 {
-    font-size: 6em;
-  }
-}
-
-.container-fluid .container .row .head h1 em {
+.intro .introductie h1 em {
+  font-style: normal;
   font-family: "Shadows Into Light Two", cursive;
   color: #C73D1B;
-  font-style: normal;
 }
 
-/*einde titel*/
-.luc {
-  height: 400px;
-  margin: -100px 0px -160px -40px;
-}
-
-@media (min-width: 768px) {
-  .luc {
-    height: 700px;
-    margin: -135px 0px -180px 0px;
-  }
-}
-
-@media (min-width: 992px) {
-  .luc {
-    height: 900px;
-  }
-}
-
-/*einde krans*/
-.leestekst .tussentitels {
-  font-family: "Shadows Into Light Two", cursive;
-  margin-bottom: 40px;
-  color: #15A2B1;
-  font-size: 1.8em;
-  line-height: 1.2em;
-}
-
-@media (min-width: 768px) {
-  .leestekst .tussentitels {
-    font-size: 2.3em;
-    line-height: 1.4em;
-  }
-}
-
-.leestekst .tussentitels em {
-  font-style: normal;
-  color: #ffff;
-  font-family: "Shadows Into Light Two", cursive;
-}
-
-.leestekst .lees {
-  line-height: 1.6em;
-  margin-bottom: 60px;
-  padding-right: 100px;
-}
-
-.leestekst .extra {
-  margin-top: -30px;
-}
-
-.introluc {
-  display: block;
-  background-image: url("../styles/images/bolvorm.png");
-  background-size: 200%;
-  background-repeat: no-repeat;
-  height: 700px;
-  padding: 60px 0px 0px 100px;
-}
-
-@media (min-width: 768px) {
-  .introluc {
-    padding: 135px 0px 0px 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .introluc {
-    padding: 135px 0px 0px 100px;
-  }
-}
-
-.introluc h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.4em;
-  margin-bottom: 40px;
-}
-
-@media (min-width: 1200px) {
-  .introluc h2 {
-    font-size: 3em;
-  }
-}
-
-.introluc .zelfhulpgroepbutton {
-  background-color: #C73D1B;
-  color: #ffff;
-  line-height: 40px;
-  border-radius: 50px;
-  padding: 10px 15px;
-}
-
-.introluc .zelfhulpgroepbutton:hover {
-  background-color: #ffff;
-  color: #C73D1B;
-  text-decoration: none;
-}
-
-.tweederij .eerstvolgendetekst {
-  margin-top: -180px;
-}
-
-@media (min-width: 768px) {
-  .tweederij .eerstvolgendetekst {
-    margin-top: 0px;
-  }
+.intro .introductie p {
+  line-height: 1.8em;
 }
 
 /*begin footer*/
-.footer {
-  margin-top: -100px;
-  background-color: #15A2B1;
-}
-
 .footer .footer-container {
   padding: 30px 0px;
 }
@@ -253,4 +139,4 @@ body {
   bottom: 20%;
   border-radius: 40px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=new.css.map */
