@@ -111,7 +111,13 @@ body {
 .leestekst .lees {
   line-height: 1.6em;
   margin-bottom: 60px;
-  padding-right: 100px;
+  padding-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .leestekst .lees {
+    padding-right: 100px;
+  }
 }
 
 .leestekst .extra {

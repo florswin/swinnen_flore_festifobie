@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*gemaakt voor een mobiel scherm van 400px*/
+/*hiervoor mobile*/
 /*tablets*/
 /*desktops*/
 /*grote desktops*/
@@ -52,10 +54,16 @@ body {
 
 .container-donker h1 {
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 7em;
+  font-size: 5em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 560px) {
+  .container-donker h1 {
+    font-size: 7em;
+  }
+}
+
+@media (min-width: 768px) {
   .container-donker h1 {
     font-size: 12em;
   }
@@ -99,20 +107,20 @@ body {
 .container-donker .angst .angstig {
   width: 80%;
   height: auto;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .container-donker .angst .angstig {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 140px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container-donker .angst .angstig {
-    margin-left: 100px;
-    margin-top: -30px;
+    margin-left: 20px;
+    margin-top: 180px;
   }
 }
 
@@ -220,10 +228,10 @@ body {
 .container-donker .angst .text1, .container-donker .angst .text2, .container-donker .angst .text3, .container-donker .angst .text4, .container-donker .angst .text5 {
   position: absolute;
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .container-donker .angst .text1, .container-donker .angst .text2, .container-donker .angst .text3, .container-donker .angst .text4, .container-donker .angst .text5 {
     font-size: 1.4em;
   }
@@ -236,12 +244,21 @@ body {
           transform: rotate(-25deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
+  .container-donker .angst .text1 {
+    left: 5%;
+    top: 40%;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@media (min-width: 1200px) {
   .container-donker .angst .text1 {
     left: -5%;
     top: 40%;
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
   }
 }
 
@@ -252,10 +269,19 @@ body {
           transform: rotate(20deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .container-donker .angst .text2 {
     left: 75%;
     top: 65%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+@media (min-width: 992px) {
+  .container-donker .angst .text2 {
+    left: 75%;
+    top: 70%;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
   }
@@ -268,12 +294,21 @@ body {
           transform: rotate(10deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .container-donker .angst .text3 {
-    left: 100%;
+    left: 60%;
     top: 10%;
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text3 {
+    left: -5%;
+    top: 65%;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
   }
 }
 
@@ -284,6 +319,15 @@ body {
           transform: rotate(40deg);
 }
 
+@media (min-width: 992px) {
+  .container-donker .angst .text4 {
+    left: 80%;
+    top: 50%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
 .container-donker .angst .text5 {
   left: 5%;
   top: 70%;
@@ -291,12 +335,21 @@ body {
           transform: rotate(-30deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .container-donker .angst .text5 {
     left: 10%;
     top: 70%;
     -webkit-transform: rotate(-30deg);
             transform: rotate(-30deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container-donker .angst .text5 {
+    left: -10%;
+    top: 80%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
   }
 }
 
@@ -307,25 +360,31 @@ body {
   color: #ffff;
   background-color: #C73D1B;
   line-height: 64px;
-  padding: 5px 30px;
   border-radius: 100px;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 100%;
   text-align: center;
+}
+
+@media (min-width: 560px) {
+  .container-donker .angst .expectationbutton {
+    padding: 5px 10px;
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 768px) {
   .container-donker .angst .expectationbutton {
     top: 90%;
-    left: 20%;
+    left: 0%;
     line-height: 30px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container-donker .angst .expectationbutton {
     top: 90%;
-    left: 10%;
+    left: -5%;
     line-height: 64px;
   }
 }
@@ -345,9 +404,15 @@ body {
   padding-bottom: 200px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit {
     padding: 250px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wit {
+    padding: 300px 0px;
   }
 }
 
@@ -368,13 +433,31 @@ body {
 
 .wit .oorzaken p.paragraph em {
   font-style: normal;
-  font-size: 1.8em;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .wit .oorzaken p.paragraph em {
+    font-size: 1.8em;
+  }
 }
 
 .wit .oorzaken .oorzaak1 {
   position: absolute;
-  top: -50%;
+  top: -40%;
   left: 5%;
+}
+
+@media (min-width: 560px) {
+  .wit .oorzaken .oorzaak1 {
+    top: -70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak1 {
+    top: -75%;
+  }
 }
 
 .wit .oorzaken .oorzaak1 #zoen {
@@ -382,15 +465,21 @@ body {
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak1 #zoen {
     height: 120px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak1 #zoen {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak1 #zoen {
+    height: 200px;
   }
 }
 
@@ -412,13 +501,19 @@ body {
   font-style: italic;
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak1 p.meertekst1 {
+    margin-top: 25px;
+  }
+}
+
 .wit .oorzaken .oorzaak2 {
   position: absolute;
   top: 100%;
   left: 10%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak2 {
     top: 90%;
   }
@@ -429,15 +524,21 @@ body {
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak2 #zak {
     height: 120px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak2 #zak {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak2 #zak {
+    height: 200px;
   }
 }
 
@@ -452,22 +553,34 @@ body {
   background-color: #15A2B1;
   padding: 20px;
   border-radius: 60px;
-  margin: -180px 0px 0px;
+  margin: -210px 0px 0px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak2 p.meertekst2 {
     margin: -230px 0px 0px;
   }
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak2 p.meertekst2 {
+    margin-top: -280px;
+  }
+}
+
 .wit .oorzaken .oorzaak3 {
   position: absolute;
-  top: -65%;
+  top: -45%;
   left: 70%;
+}
+
+@media (min-width: 560px) {
+  .wit .oorzaken .oorzaak3 {
+    top: -75%;
+  }
 }
 
 .wit .oorzaken .oorzaak3 #pyjama {
@@ -475,15 +588,21 @@ body {
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak3 #pyjama {
     height: 140px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak3 #pyjama {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak3 #pyjama {
+    height: 200px;
   }
 }
 
@@ -503,9 +622,15 @@ body {
   font-style: italic;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak3 p.meertekst3 {
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak3 p.meertekst3 {
+    margin-top: 30px;
   }
 }
 
@@ -520,15 +645,21 @@ body {
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak4 #uitnodiging {
     height: 130px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak4 #uitnodiging {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak4 #uitnodiging {
+    height: 200px;
   }
 }
 
@@ -542,16 +673,22 @@ body {
   z-index: 1;
   background-color: #15A2B1;
   padding: 20px;
-  margin: -220px 0px 0px -100px;
+  margin: -215px 0px 0px -100px;
   border-radius: 60px;
   font-family: "Shadows Into Light Two", cursive;
   color: #ffff;
   font-style: italic;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak4 p.meertekst4 {
     margin: -280px 0px 0px -100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak4 p.meertekst4 {
+    margin: -320px 0px 0px -100px;
   }
 }
 
@@ -561,20 +698,32 @@ body {
   left: 40%;
 }
 
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak5 {
+    top: 130%;
+  }
+}
+
 .wit .oorzaken .oorzaak5 #chocolade {
   height: 100px;
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak5 #chocolade {
     height: 120px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak5 #chocolade {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak5 #chocolade {
+    height: 200px;
   }
 }
 
@@ -595,23 +744,41 @@ body {
   font-style: italic;
 }
 
+@media (min-width: 768px) {
+  .wit .oorzaken .oorzaak5 p.meertekst5 {
+    margin: -250px 0px 0px;
+  }
+}
+
 @media (min-width: 992px) {
   .wit .oorzaken .oorzaak5 p.meertekst5 {
-    margin: -225px 0px 0px;
+    margin-top: -280px;
   }
 }
 
 .wit .oorzaken .oorzaak6 {
   position: absolute;
-  top: -80%;
-  left: 40%;
+  top: -60%;
+  left: 45%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 560px) {
+  .wit .oorzaken .oorzaak6 {
+    top: -100%;
+  }
+}
+
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak6 {
     position: absolute;
     top: -100%;
     left: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak6 {
+    top: -125%;
   }
 }
 
@@ -620,15 +787,21 @@ body {
   width: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak6 #mandje {
     height: 130px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .wit .oorzaken .oorzaak6 #mandje {
     height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak6 #mandje {
+    height: 200px;
   }
 }
 
@@ -648,9 +821,15 @@ body {
   font-style: italic;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .wit .oorzaken .oorzaak6 p.meertekst6 {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wit .oorzaken .oorzaak6 p.meertekst6 {
+    margin-top: 25px;
   }
 }
 
@@ -660,7 +839,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .lichtblauw {
     text-align: left;
   }
@@ -681,8 +860,14 @@ body {
 }
 
 .lichtblauw .symptomen p.uitlegkalender em {
-  font-size: 1.8em;
   font-style: normal;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .lichtblauw .symptomen p.uitlegkalender em {
+    font-size: 1.8em;
+  }
 }
 
 .lichtblauw .symptomen p.twijfel {
@@ -712,10 +897,16 @@ body {
 
 @media (min-width: 768px) {
   .lichtblauw .kalender {
-    height: 400px;
+    height: 270px;
     width: auto;
     margin: -7px 0px 0px 70px;
     display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .lichtblauw .kalender {
+    height: 400px;
   }
 }
 
@@ -726,17 +917,18 @@ body {
 }
 
 .praat .uitroep {
-  width: 500px;
+  width: 300px;
   position: absolute;
   top: 0%;
   left: 2%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .praat .uitroep {
     position: absolute;
     top: 10%;
     left: -2%;
+    width: 400px;
   }
 }
 
@@ -756,8 +948,14 @@ body {
 }
 
 .praat .praatoproep p.hulptekst em {
-  font-size: 1.8em;
   font-style: normal;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .praat .praatoproep p.hulptekst em {
+    font-size: 1.8em;
+  }
 }
 
 .praat .praatoproep p.lidmaatschap {
@@ -790,7 +988,7 @@ body {
           transform: rotate(400deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .praat .praatoproep .verborgenuitleg #spraakballon {
     position: absolute;
     bottom: -10%;
@@ -802,7 +1000,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .praat .praatoproep .verborgenuitleg #spraakballon {
     position: absolute;
     bottom: -10%;
@@ -821,7 +1019,7 @@ body {
   left: 30%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
     bottom: 0%;
@@ -829,7 +1027,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
     bottom: 10%;
@@ -837,7 +1035,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
     bottom: 10%;
@@ -854,8 +1052,14 @@ body {
 }
 
 .white em {
-  font-size: 1.8em;
   font-style: normal;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .white em {
+    font-size: 1.8em;
+  }
 }
 
 .white .hulpicoon {
@@ -863,7 +1067,7 @@ body {
   margin: 30px 0px 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .white .hulpicoon {
     height: 100px;
   }
@@ -888,7 +1092,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
     margin-bottom: 0px;
   }
@@ -918,7 +1122,7 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .footer .footer-container #e-mail {
     display: inline;
   }
@@ -932,7 +1136,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .footer .footer-container #inschrijven {
     margin-top: 0px;
   }

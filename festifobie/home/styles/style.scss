@@ -12,9 +12,13 @@ $fontset2: 'Reenie Beanie', cursive;
 $fontset3: 'Short Stack', cursive;
 $fontset4: 'Roboto', sans-serif;
 
-$breekpunt1: 768px; /*tablets*/
-$breekpunt2: 992px; /*desktops*/
-$breekpunt3: 1200px; /*grote desktops*/
+
+/*gemaakt voor een mobiel scherm van 400px*/
+
+$breekpunt1: 560px; /*hiervoor mobile*/
+$breekpunt2: 768px; /*tablets*/
+$breekpunt3: 992px; /*desktops*/
+$breekpunt4: 1200px; /*grote desktops*/
 
 *{
     padding: 0; 
@@ -67,7 +71,9 @@ body {
         
         h1 {
             font-family: $fontset1;
-            font-size: 7em;
+            font-size: 5em;
+            @media (min-width: $breekpunt1) {
+                font-size: 7em;}
             @media (min-width: $breekpunt2) {
                 font-size: 12em;}
         }
@@ -109,17 +115,17 @@ body {
             .angstig {
                 width: 80%;
                 height: auto;
-                margin-left: 50px;
+                margin-left: 30px;
 
 
                 @media (min-width: $breekpunt1){
-                    margin-left: 100px;
+                    margin-left: 50px;
                     margin-top: 140px;
                 }
                 
                 @media (min-width: $breekpunt2){
-                    margin-left: 100px;
-                    margin-top:-30px;
+                    margin-left: 20px;
+                    margin-top: 180px;
                 }
             }
 
@@ -145,7 +151,7 @@ body {
             .text1, .text2, .text3, .text4, .text5 {
                 position: absolute;
                 font-family: $fontset1;
-                font-size: 1.2em;
+                font-size: 1em;
                 @media (min-width: $breekpunt1){
                     font-size: 1.4em;
                 }
@@ -155,9 +161,14 @@ body {
                 top: 20%;
                 transform: rotate(-25deg);
                 @media(min-width: $breekpunt1) {
+                    left: 5%;
+                    top: 40%;
+                    transform: rotate(-20deg);
+                }
+                @media(min-width: $breekpunt4) {
                     left: -5%;
                     top: 40%;
-                    transform: rotate(-15deg);
+                    transform: rotate(-20deg);
                 }
             }
             .text2 {
@@ -169,21 +180,36 @@ body {
                     top: 65%;
                     transform: rotate(30deg);
                 }
+                @media(min-width: $breekpunt3) {
+                    left: 75%;
+                    top: 70%;
+                    transform: rotate(30deg);
+                }
             }
             .text3 {
                 left: 80%;
                 top: 10%;
                 transform: rotate(10deg);
                 @media(min-width: $breekpunt1){
-                    left: 100%;
+                    left: 60%;
                     top: 10%;
                     transform: rotate(10deg);
+                }
+                @media(min-width: $breekpunt2){
+                    left: -5%;
+                    top: 65%;
+                    transform: rotate(15deg);
                 }
             }
             .text4 {
                 left: 90%;
                 top: 40%;
                 transform: rotate(40deg);
+                @media (min-width: $breekpunt3){
+                left: 80%;
+                top: 50%;
+                transform: rotate(20deg);
+                }
             }
             .text5 {
                 left: 5%;
@@ -194,6 +220,11 @@ body {
                     top: 70%;
                     transform: rotate(-30deg);
                 }
+                @media(min-width: $breekpunt2){
+                    left: -10%;
+                    top: 80%;
+                    transform: rotate(-15deg);
+                }
             }
 
             .expectationbutton {
@@ -203,21 +234,25 @@ body {
                 color: $color4;
                 background-color: $color3;
                 line-height: 64px;
-                padding: 5px 30px;
                 border-radius: 100px;
-                font-size: 1.2em;
+                font-size: 1em;
                 width: 100%;
                 text-align: center;
+
+                @media (min-width: $breekpunt1) {
+                    padding: 5px 10px;
+                    font-size: 1.2em;
+                }
                 
-                @media (min-width: $breekpunt1){
+                @media (min-width: $breekpunt2){
                     top: 90%;
-                    left: 20%;
+                    left: 0%;
                     line-height: 30px;
                 }
 
                 @media (min-width: $breekpunt3){
                     top: 90%;
-                    left: 10%;
+                    left: -5%;
                     line-height: 64px;
                 }
 
@@ -242,6 +277,9 @@ body {
     @media (min-width: $breekpunt2) {
         padding: 250px 0px;
     }
+    @media (min-width: $breekpunt2) {
+        padding: 300px 0px;
+    }
     .oorzaken {
         position: relative;
         
@@ -255,13 +293,22 @@ body {
             text-align: center;
             em {
                 font-style: normal;
-                font-size: 1.8em;
+                font-size: 1em;
+
+                @media(min-width: $breekpunt2) 
+                {font-size: 1.8em;}
             }
         }
         .oorzaak1 {
             position: absolute;
-            top: -50%;
+            top: -40%;
             left: 5%;
+            @media (min-width: $breekpunt1){
+                top: -70%;
+            }
+            @media(min-width: $breekpunt2) {
+                top: -75%;
+            }
 
 
             #zoen {
@@ -272,6 +319,9 @@ body {
                 }
                 @media (min-width: $breekpunt2) {
                     height: 160px;
+                }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
                 }
             }
 
@@ -290,6 +340,9 @@ body {
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
+                @media (min-width: $breekpunt3) {
+                    margin-top: 25px;
+                }
             }
         }
 
@@ -310,6 +363,9 @@ body {
                 @media (min-width: $breekpunt2) {
                     height: 160px;
                 }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
+                }
             }
 
             #zak:hover {
@@ -322,20 +378,27 @@ body {
                 background-color: $color1;
                 padding: 20px;
                 border-radius: 60px;
-                margin: -180px 0px 0px;
+                margin: -210px 0px 0px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
                 @media (min-width: $breekpunt2) {
                    margin: -230px 0px 0px;
                 }
+                @media (min-width: $breekpunt3) {
+                    margin-top: -280px;
+                }
             }
         }
     
         .oorzaak3 {
             position:absolute; 
-            top:-65%;
+            top:-45%;
             left: 70%;
+
+            @media (min-width: $breekpunt1){
+                top: -75%;
+            }
             
             #pyjama {
                 height: 100px;
@@ -345,6 +408,9 @@ body {
                 }
                 @media (min-width: $breekpunt2) {
                     height: 160px;
+                }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
                 }
             }
 
@@ -364,6 +430,9 @@ body {
                 @media (min-width: $breekpunt1){
                     margin-top: 15px;
                 }
+                @media (min-width: $breekpunt3) {
+                    margin-top: 30px;
+                }
             }
         }
         
@@ -381,6 +450,9 @@ body {
                 @media (min-width: $breekpunt2) {
                     height: 160px;
                 }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
+                }
             }
             
             #uitnodiging:hover {
@@ -392,13 +464,16 @@ body {
                 z-index: 1;
                 background-color: $color1;
                 padding: 20px;
-                margin: -220px 0px 0px -100px;
+                margin: -215px 0px 0px -100px;
                 border-radius: 60px;
                 font-family: $fontset1; 
                 color: $color4;
                 font-style: italic;
-                @media (min-width: $breekpunt3) {
+                @media(min-width: $breekpunt2) {
                     margin: -280px 0px 0px -100px;
+                }
+                @media (min-width: $breekpunt3) {
+                    margin: -320px 0px 0px -100px;
                 }
             }
         }
@@ -407,6 +482,9 @@ body {
             position: absolute;
             top: 120%;
             left: 40%;
+            @media (min-width: $breekpunt3) {
+                top: 130%;;
+            }
                     
             #chocolade {
                 height: 100px;
@@ -416,6 +494,9 @@ body {
                 }
                 @media (min-width: $breekpunt2) {
                     height: 160px;
+                }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
                 }
             }
             
@@ -434,19 +515,28 @@ body {
                 color: $color4;
                 font-style: italic;
                 @media (min-width: $breekpunt2) {
-                   margin: -225px 0px 0px;
+                   margin: -250px 0px 0px;
+                }
+                @media (min-width: $breekpunt3) {
+                    margin-top: -280px;
                 }
             }
         }
 
         .oorzaak6 {
             position: absolute;
-            top: -80%;
-            left: 40%;
+            top: -60%;
+            left: 45%;
+            @media(min-width: $breekpunt1){
+                top: -100%;
+            }
             @media (min-width: $breekpunt2) {
                     position: absolute;
                     top:-100%;
                     left: 40%;
+            }
+            @media (min-width: $breekpunt3) {
+                top: -125%;;
             }
                     
             #mandje {
@@ -457,6 +547,9 @@ body {
                 }
                 @media (min-width: $breekpunt2) {
                     height: 160px;
+                }
+                @media (min-width: $breekpunt3) {
+                    height: 200px;
                 }
             }
             
@@ -475,6 +568,9 @@ body {
                 font-style: italic;
                 @media (min-width: $breekpunt1) {
                     margin-top: 10px;
+                }
+                @media (min-width: $breekpunt3) {
+                    margin-top: 25px;
                 }
 
             }
@@ -500,8 +596,11 @@ body {
             p.uitlegkalender {
                 line-height: 25px;
                 em {
-                    font-size: 1.8em;
                     font-style: normal;
+                    font-size: 1em;
+    
+                    @media(min-width: $breekpunt2) 
+                    {font-size: 1.8em;}
                 }
             }
 
@@ -528,12 +627,15 @@ body {
         display: none;
         filter: drop-shadow(2px 2px 7px black); 
         
-        @media (min-width: $breekpunt1) {
-            height: 400px;
+        @media (min-width: $breekpunt2) {
+            height: 270px;
             width: auto;
             margin: -7px 0px 0px 70px;
             display: block;
             }
+        @media (min-width: $breekpunt3) {
+            height: 400px;
+        }
     }
 }   
   
@@ -544,7 +646,7 @@ body {
     margin: 150px 0px;
     position: relative;
     .uitroep {
-        width: 500px;
+        width: 300px;
         position: absolute;
         top: 0%;
         left: 2%;
@@ -552,7 +654,8 @@ body {
         @media (min-width: $breekpunt1) {
         position: absolute;
         top: 10%;
-        left: -2%;}
+        left: -2%;
+        width: 400px;}
     }
     .praatoproep {
         text-align: center;
@@ -566,8 +669,11 @@ body {
         p.hulptekst {
             line-height: 1.6em;
             em {
-                font-size: 1.8em;
                 font-style: normal;
+                font-size: 1em;
+
+                @media(min-width: $breekpunt2) 
+                {font-size: 1.8em;}
             }
         }
 
@@ -651,8 +757,11 @@ body {
     padding: 70px 0px 70px;
 
     em {
-        font-size: 1.8em;
         font-style: normal;
+        font-size: 1em;
+
+        @media(min-width: $breekpunt2) 
+        {font-size: 1.8em;}
     }
     .hulpicoon {
         height: 50px;
