@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*gemaakt voor een mobiel scherm van 400px*/
+/*hiervoor mobile*/
 /*tablets*/
 /*desktops*/
 /*grote desktops*/
@@ -8,6 +10,12 @@
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.6em;
+}
+
+body {
+  background-color: #223A52;
+  color: #ffff;
 }
 
 body {
@@ -64,13 +72,13 @@ body {
   padding: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .zelftest {
     border-radius: 30px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .zelftest {
     width: 60%;
   }
@@ -142,7 +150,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
     margin-bottom: 0px;
   }
@@ -172,7 +180,7 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #e-mail {
     display: inline;
   }
@@ -186,7 +194,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #inschrijven {
     margin-top: 0px;
   }
