@@ -15,7 +15,8 @@ $fontset4: 'Roboto', sans-serif;
 
 /*gemaakt voor een mobiel scherm van 400px*/
 
-$breekpunt1: 560px; /*hiervoor mobile*/
+$breekpuntextrasmall: 400px;
+$breekpunt1: 576px; /*hiervoor mobile*/
 $breekpunt2: 768px; /*tablets*/
 $breekpunt3: 992px; /*desktops*/
 $breekpunt4: 1200px; /*grote desktops*/
@@ -187,9 +188,15 @@ body {
                 }
             }
             .text3 {
-                left: 80%;
+                left: 70%;
                 top: 10%;
                 transform: rotate(10deg);
+
+                @media (min-width: $breekpuntextrasmall) {
+                    left: 80%;
+                    top: 10%;
+                    transform: rotate(10deg);
+                }
                 @media(min-width: $breekpunt1){
                     left: 60%;
                     top: 10%;
@@ -233,7 +240,7 @@ body {
                 left: 0%;
                 color: $color4;
                 background-color: $color3;
-                line-height: 64px;
+                line-height: 30px;
                 border-radius: 100px;
                 font-size: 1em;
                 width: 100%;
@@ -242,6 +249,7 @@ body {
                 @media (min-width: $breekpunt1) {
                     padding: 5px 10px;
                     font-size: 1.2em;
+                    line-height: 50px;
                 }
                 
                 @media (min-width: $breekpunt2){
@@ -714,6 +722,9 @@ body {
                     transform: none;
                     height: 250px;
                 }
+                @media (min-width: $breekpunt4) {
+                    height: 280px;
+                }
             }
             #uitleg {
                 font-size: 0.8em;
@@ -742,8 +753,9 @@ body {
 
                 @media (min-width: $breekpunt4){
                     position: absolute;
-                    bottom: 10%;
-                    left: 70%;
+                    top: 50%;
+                    left: 69%;
+                    padding: 10px;
                 }
             }
         }
@@ -759,6 +771,7 @@ body {
     color: black; 
     padding: 70px 0px 70px;
 
+
     em {
         font-style: normal;
         font-size: 1em;
@@ -767,9 +780,11 @@ body {
         {font-size: 1.8em;}
     }
     .hulpicoon {
-        height: 50px;
-        margin: 30px 0px 15px;
+        height: 30px;
         @media (min-width: $breekpunt1) {
+            height: 50px;
+            margin: 30px 0px 15px;}
+        @media (min-width: $breekpunt2) {
             height: 100px;
         }
     }
@@ -777,6 +792,12 @@ body {
 
     .gegevens {
         color: black;
+        font-size: 0.7em;
+        margin-top: 10px;
+        @media (min-width: $breekpunt1){
+            font-size: 1.2em;
+            margin-top: 0px;
+        }
     }
 
     .gegevens:hover {
@@ -864,17 +885,34 @@ body {
     justify-content: space-between;
 
     .icoon1 {
+        .emailimg {
+            margin-left: 30%;
+            @media (min-width: $breekpunt2){
+                margin-left: 0%;
+            }
+        }
         .mail {
             display: block;
         }
     }
 
     .icoon2 {
+        .chatimg {
+            @media (min-width: $breekpunt2){
+                margin-left: -10%;
+            }
+        }
         .chat {
             display: block;
         }
     }
     .icoon3 {
+        .telefoonimg {
+            margin-left: 20%;
+            @media (min-width: $breekpunt2){
+                margin-left: 10%;
+            }
+        }
         .telefoon {display: block;}
     }
 }

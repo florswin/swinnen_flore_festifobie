@@ -57,7 +57,7 @@ body {
   font-size: 5em;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker h1 {
     font-size: 7em;
   }
@@ -110,7 +110,7 @@ body {
   margin-left: 30px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .angstig {
     margin-left: 50px;
     margin-top: 140px;
@@ -231,7 +231,7 @@ body {
   font-size: 1em;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .text1, .container-donker .angst .text2, .container-donker .angst .text3, .container-donker .angst .text4, .container-donker .angst .text5 {
     font-size: 1.4em;
   }
@@ -244,7 +244,7 @@ body {
           transform: rotate(-25deg);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .text1 {
     left: 5%;
     top: 40%;
@@ -269,7 +269,7 @@ body {
           transform: rotate(20deg);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .text2 {
     left: 75%;
     top: 65%;
@@ -288,13 +288,22 @@ body {
 }
 
 .container-donker .angst .text3 {
-  left: 80%;
+  left: 70%;
   top: 10%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 400px) {
+  .container-donker .angst .text3 {
+    left: 80%;
+    top: 10%;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@media (min-width: 576px) {
   .container-donker .angst .text3 {
     left: 60%;
     top: 10%;
@@ -335,7 +344,7 @@ body {
           transform: rotate(-30deg);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .text5 {
     left: 10%;
     top: 70%;
@@ -359,17 +368,18 @@ body {
   left: 0%;
   color: #ffff;
   background-color: #C73D1B;
-  line-height: 64px;
+  line-height: 30px;
   border-radius: 100px;
   font-size: 1em;
   width: 100%;
   text-align: center;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .container-donker .angst .expectationbutton {
     padding: 5px 10px;
     font-size: 1.2em;
+    line-height: 50px;
   }
 }
 
@@ -448,7 +458,7 @@ body {
   left: 5%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak1 {
     top: -70%;
   }
@@ -465,7 +475,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak1 #zoen {
     height: 120px;
   }
@@ -524,7 +534,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak2 #zak {
     height: 120px;
   }
@@ -577,7 +587,7 @@ body {
   left: 70%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak3 {
     top: -75%;
   }
@@ -588,7 +598,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak3 #pyjama {
     height: 140px;
   }
@@ -622,7 +632,7 @@ body {
   font-style: italic;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak3 p.meertekst3 {
     margin-top: 15px;
   }
@@ -645,7 +655,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak4 #uitnodiging {
     height: 130px;
   }
@@ -709,7 +719,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak5 #chocolade {
     height: 120px;
   }
@@ -762,7 +772,7 @@ body {
   left: 45%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak6 {
     top: -100%;
   }
@@ -787,7 +797,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak6 #mandje {
     height: 130px;
   }
@@ -821,7 +831,7 @@ body {
   font-style: italic;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .wit .oorzaken .oorzaak6 p.meertekst6 {
     margin-top: 10px;
   }
@@ -839,7 +849,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .lichtblauw {
     text-align: left;
   }
@@ -923,7 +933,7 @@ body {
   left: 2%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .praat .uitroep {
     position: absolute;
     top: 10%;
@@ -991,7 +1001,7 @@ body {
   top: 100%;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .praat .praatoproep .verborgenuitleg #spraakballon {
     left: 30%;
   }
@@ -1005,6 +1015,12 @@ body {
     -webkit-transform: none;
             transform: none;
     height: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .praat .praatoproep .verborgenuitleg #spraakballon {
+    height: 280px;
   }
 }
 
@@ -1041,8 +1057,9 @@ body {
 @media (min-width: 1200px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
-    bottom: 10%;
-    left: 70%;
+    top: 50%;
+    left: 69%;
+    padding: 10px;
   }
 }
 
@@ -1066,11 +1083,17 @@ body {
 }
 
 .white .hulpicoon {
-  height: 50px;
-  margin: 30px 0px 15px;
+  height: 30px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
+  .white .hulpicoon {
+    height: 50px;
+    margin: 30px 0px 15px;
+  }
+}
+
+@media (min-width: 768px) {
   .white .hulpicoon {
     height: 100px;
   }
@@ -1078,6 +1101,15 @@ body {
 
 .white .gegevens {
   color: black;
+  font-size: 0.7em;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .white .gegevens {
+    font-size: 1.2em;
+    margin-top: 0px;
+  }
 }
 
 .white .gegevens:hover {
@@ -1095,7 +1127,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
     margin-bottom: 0px;
   }
@@ -1125,7 +1157,7 @@ body {
   display: block;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .footer .footer-container #e-mail {
     display: inline;
   }
@@ -1139,7 +1171,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .footer .footer-container #inschrijven {
     margin-top: 0px;
   }
@@ -1173,12 +1205,38 @@ body {
           justify-content: space-between;
 }
 
+.hulpiconen .icoon1 .emailimg {
+  margin-left: 30%;
+}
+
+@media (min-width: 768px) {
+  .hulpiconen .icoon1 .emailimg {
+    margin-left: 0%;
+  }
+}
+
 .hulpiconen .icoon1 .mail {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .hulpiconen .icoon2 .chatimg {
+    margin-left: -10%;
+  }
+}
+
 .hulpiconen .icoon2 .chat {
   display: block;
+}
+
+.hulpiconen .icoon3 .telefoonimg {
+  margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  .hulpiconen .icoon3 .telefoonimg {
+    margin-left: 10%;
+  }
 }
 
 .hulpiconen .icoon3 .telefoon {
