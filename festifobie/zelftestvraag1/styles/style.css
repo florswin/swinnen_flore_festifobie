@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*gemaakt voor een mobiel scherm van 400px*/
+/*hiervoor mobile*/
 /*tablets*/
 /*desktops*/
 /*grote desktops*/
@@ -8,6 +10,7 @@
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.6em;
 }
 
 body {
@@ -60,11 +63,17 @@ body {
 .zelftest {
   margin-top: 20px;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 30px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+  .zelftest {
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 768px) {
   .zelftest {
     width: 60%;
   }
@@ -78,8 +87,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #C73D1B;
   color: white;
-  border-radius: 100px;
-  padding: 10px;
+  border-radius: 40px;
+  padding: 10px 20px;
   font-style: italic;
 }
 
@@ -136,7 +145,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
     margin-bottom: 0px;
   }
@@ -166,7 +175,7 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #e-mail {
     display: inline;
   }
@@ -180,7 +189,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #inschrijven {
     margin-top: 0px;
   }

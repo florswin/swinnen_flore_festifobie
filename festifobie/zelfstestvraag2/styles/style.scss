@@ -72,9 +72,12 @@ body {
 .zelftest{
     margin-top: 20px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 30px;
     
+    @media (min-width: $breekpunt1){
+        border-radius:30px;
+    }
     @media (min-width: $breekpunt2) 
     {width: 60%;}
     

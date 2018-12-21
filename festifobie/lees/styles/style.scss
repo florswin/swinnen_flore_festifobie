@@ -5,22 +5,28 @@ $color2: #223A52;
 $color3: #C73D1B;
 $color4: #ffff; 
 
-$alpha1: 0.5;
+$alpha1: 0.1;
 
 $fontset1: 'Shadows Into Light Two', cursive;
 $fontset2: 'Reenie Beanie', cursive;
 $fontset3: 'Short Stack', cursive;
 $fontset4: 'Roboto', sans-serif;
 
-$breekpunt1: 768px; /*tablets*/
-$breekpunt2: 992px; /*desktops*/
-$breekpunt3: 1200px; /*grote desktops*/
+
+/*gemaakt voor een mobiel scherm van 400px*/
+
+$breekpuntextrasmall: 400px;
+$breekpunt1: 576px; /*hiervoor mobile*/
+$breekpunt2: 768px; /*tablets*/
+$breekpunt3: 992px; /*desktops*/
+$breekpunt4: 1200px; /*grote desktops*/
 
 *{
     padding: 0; 
     margin: 0;
     font-family: $fontset4;
     box-sizing:border-box;
+    line-height: 1.6em;
 }
 
 body {
@@ -70,7 +76,13 @@ body {
                     font-size: 3em;
                     margin-bottom: 20px;
                     @media (min-width: $breekpunt1){
+                        font-size: 3.1em;
+                        line-height: 0.6em;
+                    }
+                    @media (min-width: $breekpunt2){
                         font-size: 6em;
+                        line-height: 0.6em;
+                        margin-top: 30px;
                     }
                     em {
                         font-family: $fontset1;
@@ -86,16 +98,25 @@ body {
 /*einde titel*/
 
 .luc {
-    height: 400px; 
-    margin: -100px 0px -160px -40px;
-
+    height: 300px; 
+    margin: -100px -400px -80px 0px;
     @media (min-width: $breekpunt1) {
-      height: 700px;  
-      margin: -135px 0px -180px 0px;
+        height: 400px;
+        margin-left: 70px;
     }
+
     @media (min-width: $breekpunt2) {
-        height: 900px;  
-      }
+        height: 600px;
+        margin-left: 80px;
+    }
+    @media (min-width: $breekpunt3) {
+        height: 700px;
+        margin-left: 140px;
+    }
+    @media (min-width: $breekpunt3) {
+        height: 700px;
+        margin-left: 190px;
+    }
 }
 
 /*einde krans*/
@@ -119,7 +140,7 @@ body {
     .lees {
         line-height: 1.6em;
         margin-bottom: 60px;
-        padding-right: 40px;
+        padding-right: 0px;
 
         @media (min-width: $breekpunt1) {
             padding-right: 100px;
@@ -133,24 +154,43 @@ body {
 
 
 .introluc {
-    
-    display: block; 
+        
+    background-color: $color1;
+    padding: 10px 15px 20px;
+    border-radius: 15px;
+        @media (min-width: $breekpunt1) {
+        background-color: $color2;
+        display: block; 
         background-image: url("../styles/images/bolvorm.png");
         background-size: 200%; 
         background-repeat: no-repeat;
         height: 700px;
-        padding: 150px 0px 0px 100px;
-        @media (min-width: $breekpunt1) {
-            padding: 135px 0px 0px 100px;
+        padding: 110px;}
+        
+        @media (min-width: $breekpunt2){
+            padding: 20px  20px 20px;
+            background-image: none;
+            background-color: $color1;
         }
-        @media (min-width: $breekpunt3) {
-            padding: 135px 0px 0px 100px;
+
+        @media (min-width: $breekpunt3){
+            padding: 60px 0px 0px 90px;
+            background-image: url(../styles/images/bolvorm.png);
+            background-color: $color2;
+
         }
+        @media (min-width: $breekpunt4) {
+            padding: 120px 0px 0px 100px;
+        }
+
         
     h2 {
         font-family: $fontset4;
-        font-size: 2.4em;
+        font-size: 2em;
         margin-bottom: 40px;
+        @media(min-width: $breekpunt1) {
+            font-size: 2.4em;
+        }
         @media (min-width: $breekpunt3) {
             font-size: 3em;
         }
@@ -172,9 +212,9 @@ body {
 
 .tweederij {
     .eerstvolgendetekst {
-        margin-top: -180px;
+        margin-top: 45px;
         @media (min-width: $breekpunt1) {
-            margin-top: 0px;
+            margin-top: -20px;
         }
     }
 }

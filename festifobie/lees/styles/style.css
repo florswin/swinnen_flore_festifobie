@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Roboto|Shadows+Into+Light+Two|Short+Stack");
+/*gemaakt voor een mobiel scherm van 400px*/
+/*hiervoor mobile*/
 /*tablets*/
 /*desktops*/
 /*grote desktops*/
@@ -8,6 +10,7 @@
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.6em;
 }
 
 body {
@@ -55,9 +58,18 @@ body {
   margin-bottom: 20px;
 }
 
+@media (min-width: 576px) {
+  .container-fluid .container .row .head h1 {
+    font-size: 3.1em;
+    line-height: 0.6em;
+  }
+}
+
 @media (min-width: 768px) {
   .container-fluid .container .row .head h1 {
     font-size: 6em;
+    line-height: 0.6em;
+    margin-top: 30px;
   }
 }
 
@@ -69,20 +81,35 @@ body {
 
 /*einde titel*/
 .luc {
-  height: 400px;
-  margin: -100px 0px -160px -40px;
+  height: 300px;
+  margin: -100px -400px -80px 0px;
+}
+
+@media (min-width: 576px) {
+  .luc {
+    height: 400px;
+    margin-left: 70px;
+  }
 }
 
 @media (min-width: 768px) {
   .luc {
-    height: 700px;
-    margin: -135px 0px -180px 0px;
+    height: 600px;
+    margin-left: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .luc {
-    height: 900px;
+    height: 700px;
+    margin-left: 140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .luc {
+    height: 700px;
+    margin-left: 190px;
   }
 }
 
@@ -95,7 +122,7 @@ body {
   line-height: 1.2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .leestekst .tussentitels {
     font-size: 2.3em;
     line-height: 1.4em;
@@ -111,10 +138,10 @@ body {
 .leestekst .lees {
   line-height: 1.6em;
   margin-bottom: 60px;
-  padding-right: 40px;
+  padding-right: 0px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .leestekst .lees {
     padding-right: 100px;
   }
@@ -125,33 +152,58 @@ body {
 }
 
 .introluc {
-  display: block;
-  background-image: url("../styles/images/bolvorm.png");
-  background-size: 200%;
-  background-repeat: no-repeat;
-  height: 700px;
-  padding: 150px 0px 0px 100px;
+  background-color: #15A2B1;
+  padding: 10px 15px 20px;
+  border-radius: 15px;
+}
+
+@media (min-width: 576px) {
+  .introluc {
+    background-color: #223A52;
+    display: block;
+    background-image: url("../styles/images/bolvorm.png");
+    background-size: 200%;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding: 110px;
+  }
 }
 
 @media (min-width: 768px) {
   .introluc {
-    padding: 135px 0px 0px 100px;
+    padding: 20px  20px 20px;
+    background-image: none;
+    background-color: #15A2B1;
+  }
+}
+
+@media (min-width: 992px) {
+  .introluc {
+    padding: 60px 0px 0px 90px;
+    background-image: url(../styles/images/bolvorm.png);
+    background-color: #223A52;
   }
 }
 
 @media (min-width: 1200px) {
   .introluc {
-    padding: 135px 0px 0px 100px;
+    padding: 120px 0px 0px 100px;
   }
 }
 
 .introluc h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2.4em;
+  font-size: 2em;
   margin-bottom: 40px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
+  .introluc h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 992px) {
   .introluc h2 {
     font-size: 3em;
   }
@@ -172,12 +224,12 @@ body {
 }
 
 .tweederij .eerstvolgendetekst {
-  margin-top: -180px;
+  margin-top: 45px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .tweederij .eerstvolgendetekst {
-    margin-top: 0px;
+    margin-top: -20px;
   }
 }
 
@@ -195,7 +247,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container .contact, .footer .footer-container .openingsuren, .footer .footer-container .volgen {
     margin-bottom: 0px;
   }
@@ -225,7 +277,7 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #e-mail {
     display: inline;
   }
@@ -239,7 +291,7 @@ body {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .footer .footer-container #inschrijven {
     margin-top: 0px;
   }

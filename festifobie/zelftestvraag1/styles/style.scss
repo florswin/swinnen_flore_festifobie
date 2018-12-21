@@ -5,22 +5,28 @@ $color2: #223A52;
 $color3: #C73D1B;
 $color4: #ffff; 
 
-$alpha1: 0.5;
+$alpha1: 0.1;
 
 $fontset1: 'Shadows Into Light Two', cursive;
 $fontset2: 'Reenie Beanie', cursive;
 $fontset3: 'Short Stack', cursive;
 $fontset4: 'Roboto', sans-serif;
 
-$breekpunt1: 768px; /*tablets*/
-$breekpunt2: 992px; /*desktops*/
-$breekpunt3: 1200px; /*grote desktops*/
+
+/*gemaakt voor een mobiel scherm van 400px*/
+
+$breekpuntextrasmall: 400px;
+$breekpunt1: 576px; /*hiervoor mobile*/
+$breekpunt2: 768px; /*tablets*/
+$breekpunt3: 992px; /*desktops*/
+$breekpunt4: 1200px; /*grote desktops*/
 
 *{
     padding: 0; 
     margin: 0;
     font-family: $fontset4;
     box-sizing:border-box;
+    line-height: 1.6em;
 }
 
 body {
@@ -73,9 +79,12 @@ body {
 .zelftest{
     margin-top: 20px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 30px;
     
+    @media (min-width: $breekpunt1){
+        border-radius:30px;
+    }
     @media (min-width: $breekpunt2) 
     {width: 60%;}
     
@@ -86,9 +95,11 @@ body {
         font-family: $fontset4;
         background-color: $color3;
         color: white;
-        border-radius: 100px;
-        padding: 10px;
+        border-radius: 40px;
+        padding: 10px 20px;
         font-style: italic;
+        
+        
     }
     .antwoord {
         border-color: red;
