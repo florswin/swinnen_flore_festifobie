@@ -4,6 +4,7 @@ function myFunction() {
 }
 
 
+
 $(document).ready(function(){
   $("#close").click(function(){
     $("#vervolgtekst").hide(300);
@@ -13,6 +14,13 @@ $(document).ready(function(){
   });
 });
 
+
+
+$(document).ready(function(){
+  $("#close").click(function(){
+    $("#leesmeer").show(300);
+  });
+});
 
 /*einde leesmeer inleiding*/
 
@@ -97,9 +105,3 @@ $(document).ready(function(){
 
 /*einde zelfhulpgroep uitleg*/
 
-/*bedanking inschrijving*/
-$(document).ready(function(){
-  $("#inschrijven").click(function(){
-    $(".bedankt").show(300);
-  });
-});

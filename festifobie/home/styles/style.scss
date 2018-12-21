@@ -731,11 +731,20 @@ body {
                 color: black;
                 font-family: $fontset1;
                 position: absolute;
-                top: 120%;
-                left: 28%;
+                top: 115%;
+                left: 44%;
                 font-size: 0.7em;
-                padding: 15px;
 
+                @media (min-width: $breekpuntextrasmall) {
+                    left: 28%;
+                    top: 120%;
+                }
+
+                @media (min-width: $breekpunt1){
+                    left:42%;
+                    top:120%;
+                    padding: 15px;
+                }
                 @media (min-width: $breekpunt2){
                     position: absolute;
                     bottom: 0%;
@@ -819,7 +828,7 @@ body {
         .contact , .openingsuren , .volgen {
             margin-bottom: 30px;
             @media (min-width: $breekpunt1){
-                margin-bottom: 0px;
+                margin-bottom: 20px;
             }
         }
 
@@ -862,19 +871,6 @@ body {
 
         }
         
-        .bedankt {
-            display: none;
-            position: relative;
-            .inschrijving {
-                background-color: $color3;
-                padding: 50px;
-                text-align: center;
-                position: absolute;
-                left: 0%;
-                bottom: 20%;
-                border-radius: 40px;
-            }
-        }
     }
 }
 

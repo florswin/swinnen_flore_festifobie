@@ -5,28 +5,33 @@ $color2: #223A52;
 $color3: #C73D1B;
 $color4: #ffff; 
 
-$alpha1: 0.5;
+$alpha1: 0.1;
 
 $fontset1: 'Shadows Into Light Two', cursive;
 $fontset2: 'Reenie Beanie', cursive;
 $fontset3: 'Short Stack', cursive;
 $fontset4: 'Roboto', sans-serif;
 
-$breekpunt1: 768px; /*tablets*/
-$breekpunt2: 992px; /*desktops*/
-$breekpunt3: 1200px; /*grote desktops*/
 
+/*gemaakt voor een mobiel scherm van 400px*/
+
+$breekpuntextrasmall: 400px;
+$breekpunt1: 576px; /*hiervoor mobile*/
+$breekpunt2: 768px; /*tablets*/
+$breekpunt3: 992px; /*desktops*/
+$breekpunt4: 1200px; /*grote desktops*/
 
 *{
     padding: 0; 
     margin: 0;
     font-family: $fontset4;
     box-sizing:border-box;
+    line-height: 1.6em;
 }
 
 body {
     background-color: $color2;
-    color: white;
+    color: $color4;
 }
 
 .navbar {
@@ -67,7 +72,10 @@ body {
     }
     h1 {
         margin-bottom: 50px;
-        font-size: 6em;
+        font-size: 4em;
+        @media (min-width: $breekpunt1){
+            font-size: 6em;
+        }
     }
     h2 {
         margin-bottom: 15px;
@@ -223,7 +231,7 @@ body {
         .contact , .openingsuren , .volgen {
             margin-bottom: 30px;
             @media (min-width: $breekpunt1){
-                margin-bottom: 0px;
+                margin-bottom: 20px;
             }
         }
 
@@ -266,19 +274,6 @@ body {
 
         }
         
-        .bedankt {
-            display: none;
-            position: relative;
-            .inschrijving {
-                background-color: $color3;
-                padding: 50px;
-                text-align: center;
-                position: absolute;
-                left: 0%;
-                bottom: 20%;
-                border-radius: 40px;
-            }
-        }
     }
 }
 
