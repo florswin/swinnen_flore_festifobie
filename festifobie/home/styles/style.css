@@ -912,7 +912,7 @@ body {
 
 /*einde symptomen*/
 .praat {
-  margin: 150px 0px;
+  margin: 200px 0px;
   position: relative;
 }
 
@@ -982,31 +982,29 @@ body {
 }
 
 .praat .praatoproep .verborgenuitleg #spraakballon {
-  height: 250px;
+  height: 205px;
   width: auto;
   -webkit-transform: rotate(400deg);
           transform: rotate(400deg);
+  position: absolute;
+  left: 10%;
+  top: 100%;
 }
 
 @media (min-width: 560px) {
   .praat .praatoproep .verborgenuitleg #spraakballon {
+    left: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .praat .praatoproep .verborgenuitleg #spraakballon {
     position: absolute;
-    bottom: -10%;
+    top: 30%;
     left: 60%;
     -webkit-transform: none;
             transform: none;
     height: 250px;
-    width: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .praat .praatoproep .verborgenuitleg #spraakballon {
-    position: absolute;
-    bottom: -10%;
-    left: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -1015,27 +1013,32 @@ body {
   color: black;
   font-family: "Shadows Into Light Two", cursive;
   position: absolute;
-  bottom: 7%;
-  left: 30%;
-}
-
-@media (min-width: 560px) {
-  .praat .praatoproep .verborgenuitleg #uitleg {
-    position: absolute;
-    bottom: 0%;
-    left: 80%;
-  }
+  top: 120%;
+  left: 28%;
+  font-size: 0.7em;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
-    bottom: 10%;
-    left: 72%;
+    bottom: 0%;
+    left: 39%;
+    padding: 20px;
   }
 }
 
 @media (min-width: 992px) {
+  .praat .praatoproep .verborgenuitleg #uitleg {
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
   .praat .praatoproep .verborgenuitleg #uitleg {
     position: absolute;
     bottom: 10%;
